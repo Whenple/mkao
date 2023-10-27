@@ -1,0 +1,212 @@
+body {
+  display: block;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+body,
+button,
+input,
+select,
+td,
+textarea,
+th {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: KakaoSmall, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+    sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1699px;
+  padding-top: 100px;
+  padding-bottom: 600px;
+}
+.main {
+  margin-left: 200px;
+  width: 100vw;
+  max-width: 1296px;
+  height: 100vw;
+}
+
+/* 제목 */
+
+.tit_main {
+  padding-left: 68px;
+  padding-top: 96px;
+}
+.txt_tit {
+  font-size: 46px;
+  line-height: 66px;
+  font-weight: bold;
+}
+
+.txt_tit2 {
+  margin-top: 10px;
+  font-size: 36px;
+  line-height: 52px;
+}
+
+/* 슬라이드(아이템카드) */
+
+.info_cate {
+  display: inline-block;
+  position: relative;
+  height: 34px;
+  margin-top: 1px;
+  padding: 0 13px;
+  border-radius: 13px;
+  font-size: 13px;
+  line-height: 34px;
+  background-color: rgb(226, 222, 222);
+  vertical-align: top;
+}
+
+.slide_test {
+  max-width: 1296px;
+  height: 442px;
+  padding: 34px 36px 66px;
+  margin-top: 50px;
+}
+
+.item_card_tit {
+  display: flex;
+  width: 380px;
+  height: 36px;
+  padding-left: 10px;
+  justify-content: space-between;
+}
+.btn_share {
+  border: none;
+}
+.link_item {
+  text-decoration: none;
+}
+.item_card_mid {
+  height: 80px;
+  font-size: 30px;
+  line-height: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: black;
+}
+.item_card_tag {
+  color: gray;
+  margin-left: 10px;
+}
+.item_card {
+  padding-top: 20px;
+  width: 400px;
+  height: 390px;
+  border-radius: 20px;
+  background-color: var(--colorBg10);
+  box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.09);
+}
+.item_card:hover {
+  box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18);
+  transform: translateY(-10px);
+}
+
+.item_card .thumb_img {
+  min-height: 100%;
+  width: 100%;
+}
+
+/* 히스토리 */
+.history {
+  margin-top: 100px;
+  max-width: 1266px;
+}
+.history_tit {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 40px;
+  margin-left: 30px;
+}
+.history_select {
+  font-size: 14pt;
+  font-weight: bold;
+  border-radius: 15px;
+  float: right;
+  background-color: rgb(226, 222, 222);
+}
+
+.history_thumb_img {
+  width: 216px;
+  height: 162px;
+  border-radius: 12px;
+}
+
+.history_ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  margin-top: 48px;
+}
+.history_list {
+  position: relative;
+  padding: 0 0 72px 62px;
+}
+
+.history_link {
+  text-decoration: none;
+}
+
+.history_card {
+  display: flex;
+}
+.history_cont {
+  padding-left: 48px;
+}
+.history_date {
+  font-size: 22px;
+  line-height: 32px;
+  color: black;
+}
+.history_mid {
+  font-size: 36px;
+  color: black;
+  line-height: 52px;
+  display: flex;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+.history_tag {
+  margin-right: 3px;
+  font-size: 20px;
+  line-height: 30px;
+  color: gray;
+}
+.history_btn {
+  display: block;
+  width: 180px;
+  height: 60px;
+  margin: 22px auto 0;
+  border-radius: 60px;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: black;
+  background-color: rgb(222, 222, 222);
+  cursor: pointer;
+  border: 0;
+}
+.history_btn:hover {
+  background-color: rgb(200, 200, 200);
+}
+.history_top_btn {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  top: 50px;
+}

@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESG | 카카오</title>
+    <link
+      data-n-head="ssr"
+      rel="icon"
+      type="image/x-icon"
+      href="./favicon.ico"
+    />
+    <link rel="stylesheet" href="kstyle.css" />
+    <link rel="stylesheet" href="kmain_boxStyle.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./kmain.js"></script>
+    <link rel="stylesheet" href="esg.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(function(){
+    $('.bxslider').bxSlider({
+      // mode: 'fade',
+      captions: true,
+      slideWidth: 900,
+      minSlides: 3,
+      maxSlides: 4,
+      // outerHeight:400,
+      // innerHeight:400
+    });
+  });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 헤더 -->
+      <header class="main_header">
+        <!-- 메인 헤더 -->
+        <div class="header">
+          <!-- 카카오로고 -->
+          <div class="logo"><a href="../kms/kmain.html">kakao</a></div>
+          <!-- 네비 -->
+          <div class="navigation">
+            <ul>
+              <!-- 소개 -->
+              <li class="intro menu" onclick="showHeader(this)">
+                <a>소개</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="intro-btn">
+                    <a href="">카카오 문화</a>
+                    <a href="">공동체</a>
+                    <a href="">연혁</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- 이야기 -->
+              <li class="story menu" onclick="showHeader(this)">
+                <a>이야기</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="story-btn">
+                    <a href="">콘텐츠저장소</a>
+                    <a href="../lgr/kdduk_final.html">뚝딱뚝딱성장기</a>
+                    <a href="">숫자로보는카카오</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- 뉴스 -->
+              <li class="news menu"><a class="news-btn" href="">뉴스</a></li>
+              <!-- 기술과 서비스 -->
+              <li class="tech menu" onclick="showHeader(this)">
+                <a>기술과서비스</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="tech-btn">
+                    <a href="">기술</a>
+                    <a href="">서비스</a>
+                  </li>
+                </ul>
+              </li>
+              <!--  약속과 책임 -->
+              <li class="promise menu" onclick="showHeader(this)">
+                <a>약속과책임</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="promise-btn">
+                    <a href="">카카오의 다짐</a>
+                    <a href="esg.html">ESG</a>
+                    <a href="../csb/activeGreen.html">액티브그린</a>
+                    <a href="../bys/dangolchallenge.html">단골만들기챌린지</a>
+                    <a href="../csb/digitalRights.html">디지털권리</a>
+                    <a href="">AI윤리</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 상단 버튼 -->
+          <div class="util-btn">
+            <button class="search btn">
+              <img src="search.png" alt="검색버튼" />
+            </button>
+            <button class="language btn">
+              <img src="language.png" alt="언어변경버튼" />
+            </button>
+            <button class="nightmode btn" value="night" onclick="nightmode()">
+              <img src="night_mode.png" alt="야간모드버튼" />
+            </button>
+          </div>
+        </div>
+        <!-- 서브 헤더 -->
+        <div class="sub-header">
+          <img
+            class="sub-header-icon"
+            src="https://www.kakaocorp.com/page/ico_tit_esg.gif"
+            alt=""
+          />
+          <span class="sub-header-txt">ESG</span>
+        </div>
+      </header>
+      <!-- 메인내용 -->
+      <main>
+        <div style="display: flex; height: 50px;  margin-left: 200px; top: 100px; position: relative;">
+          <div style="display: flex;">
+          <img src="https://www.kakaocorp.com/page/ico_tit_esg.gif" alt="" 
+          ><h6 style="font-size: 32pt;">ESG</h6>
+          </div>
+          </div>
+
+
+          <div class="future">
+              <div class="text1"><h3>모두의 지속가능한 미래를 위한</h3>
+              <h3>카카오의 약속과 책임</h3></div>
+              <div class="video">
+              <video autoplay loop muted src="https://www.kakaocorp.com/page/esg/video/esg_bnr_1439.mp4" style="width: 100%;"></video>
+          </div> 
+          </div>
+          <div class="text2"><span>카카오의 혁신과 우리의 연결이 모여 더 나은 세상, 지속가능한 미래를 함께 만들어 갑니다.</span>
+          </div>
+          <div class="textbox" style="display: flex;">
+          <div style="background-color: black; width: 200px; height: 45px; border-radius: 50px; margin-right: 5px;"></div>
+          <div style="background-color: black; width: 195px; height: 45px; border-radius: 50px; margin-right: 5px;"></div>
+          <div style="background-color: black; width: 200px; height: 45px; border-radius: 50px; "></div>
+          </div>
+          <div class="text3">
+          <div style="color: white;">2022 ESG 보고서(국문)</div>
+          <div style="color: white;">시각장애인용 대체자료</div>
+          <div style="color: white;">2022 ESG 보고서(영상)</div>
+          </div>
+          <div class="text4">
+          * 2022 ESG 보고서는 시각장애인과 독서장애인을 위해 데이지(Digital Accessible Information System: DAISY) 파일로 제공되며, 별도의 플레이어나 기기를 통해서만 이용이 가능합니다. 보다 자세한 이용
+          </div>
+          <div class="text5">
+              방법은 국립장애인도서관 페이지를 참고하시기 바랍니다. 바로가기▸
+          </div>
+      <div style="margin: auto; position: relative; top: 100px;">
+          <div style="margin: auto; width: 400px; height: 100px; font-size: 22pt;">
+              <h2>2022 HIGHLIGHT</h2></div>
+              <div style="margin: auto; display: flex; width: 1500px; height: 500px;">
+                  <div style="position: relative; margin-left: 120px; width: 750px; height: 500px;">
+                      <img src="https://www.kakaocorp.com/page/esg/card_ceo_1439.png"
+                      width="595px">
+                  <div style="position: absolute; top: 30px; left: 30px; font-size: 20pt;
+                  font-weight: bold;">
+                  <div>카카오의 서비스를 통해</div>
+                  <div>사회의 지속가능성에</div>
+                  <div>기여하고, 일상을</div>
+                  <div>더 편리하고 안전하게</div>
+                  <div>만들어가겠습니다.</div>
+                  </div>
+                  <div style="position: absolute; top: 430px; color: white; left: 20px; font-weight: bold;">
+                  <div>ESG talk</div>
+                  <div style="font-size: 19pt; letter-spacing: -1pt;">최세정 카카오 ESG 위원장</div>
+                  </div>
+                  </div>
+                  <div>
+                      <div style="position: relative; display: flex; justify-content: flex-end; width: 650px; height: 250px; margin-right: 100px; background-color: #1ED47E; border-radius: 10px;">
+                      <img src="https://www.kakaocorp.com/page/esg/card_green.png" 
+                      style="height: 250px; margin-right: 60px;"></div>
+                      <div style="position: absolute; top: 150px; right: 478px; font-weight: bold;">
+                          <div style="position: relative; top: -10px; font-size: 14pt;">Active Green Initiative</div>
+                          <div style="font-size: 19pt;">카카오 안에서,</div>
+                          <div style="font-size: 19pt;">카카오와 함께 만드는</div>
+                          <div style="font-size: 19pt;">지속 가능한 지구</div>
+                      </div>
+                      <div style="display: flex; justify-content: flex-end; width: 650px; height: 250px; background-color: #d3cdff; border-radius: 10px;">
+                      <img src="https://www.kakaocorp.com/page/esg/card_ethics.png"
+                      style="height: 250px; margin-right: 30px;" alt=""></div>
+                      <div style="position: absolute; top: 390px; font-weight: bold; right: 436px;">
+                          <div style="position: relative; top: -10px; font-size: 14pt;">Digital Responsibility</div>
+                          <div style="font-size: 18pt;">포용적 디지털 접근성과</div>
+                          <div style="font-size: 18pt;">책임 있는 AI시대 기술윤리</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div style="position: relative; top: 150px; width: 1300px; height: 500px; margin: auto; border: 10px solid black;">
+              <embed src="https://tv.kakao.com/embed/player/cliplink/440222438?service=kakao_tv&section=channel&autoplay=1&profile=HIGH&wmode=transparent" class="video2"></embed>
+          </div>
+          <div style="margin: auto; width: 1500px; height: 1400px; position: relative; top: 350px;">
+          <div style="text-align: center; position: relative; top: -10px; margin: auto; width: 400px; height: 100px; font-size: 22pt;">
+              <h2>ESG 보고서&정책</h2></div>
+              <div style="display: flex; margin: auto; width: 1300px; height: 417px; background-color: #006F58;
+              border-radius: 10px;">
+                  <div style="width: 400px; height: 445px;">
+                      <div style="position: relative; font-weight: bold; color: white; left: 40px; top: 35px;">
+                          <div style="font-size: 14pt;">ESG Report</div>
+                          <div style="position: relative; top: 10px; font-size: 29pt;">2022 ESG 보고서</div>
+                          <div style="position: relative; top: 27px; font-size: 14pt;">지속가능한 기업을 만들어가기 위한</div>
+                          <div style="position: relative; top: 27px; font-size: 14pt;">카카오의 약속과 책임을 담은 ESG보고서를</div>
+                          <div style="position: relative; top: 27px; font-size: 14pt;">매년 발간하고 있습니다.</div>
+                      </div>
+                      <div class="textbox2">
+                      <div style="background-color: black; width: 80px; height: 50px; border-radius: 50px;"></div>
+                      <div style="background-color: black; width: 80px; height: 50px; border-radius: 50px;"></div>
+                      <div style="background-color: black; width: 200px; height: 50px; border-radius: 50px;"></div>
+                      </div>
+                      <div class="text6">
+                          <div style="margin-right: 40px; position: relative; right: 20px;">국문</div>
+                          <div style="margin-right: 40px; position: relative; right: 10px;">영문</div>
+                          <div>시각장애인용 대체자료</div>
+                          </div>
+                  </div>
+                  <div style="width: 900px; height: 420px;">
+                      <img src="https://www.kakaocorp.com/page/esg/img_report.png" 
+                      width="900px"
+                      style="height: 420px;"></div>
+              </div>
+      
+              <div style="margin: auto; width: 1300px; height: 250px;">
+                  <div style="display: flex; margin: auto; width: 1200px; height: 250px; border-bottom: 1px solid rgb(236, 236, 236);">
+                      <div style="width: 250px; height: 250px;  display: flex; justify-content: center; align-items: center; font-size: 22pt;">ESG 보고서</div>
+                      <div style="width: 450px; height: 250px; "></div>
+                      <div style="width: 500px; height: 250px; ">
+                          <div class="textbox3">
+                              <div style="display: flex; justify-content: center; gap: 10px;">
+                              <div style="background-color: rgb(216, 216, 216); width: 220px; height: 50px; border-radius: 1ch;"></div>
+              <div style="background-color: rgb(216, 216, 216); width: 220px; height: 50px; border-radius: 10px;"></div>
+          </div>
+          <div style="display: flex; justify-content: center; gap: 10px; position: relative; top: 10px;">
+              <div style="background-color: rgb(216, 216, 216); width: 220px; height: 50px; border-radius: 10px;"></div>
+              <div style="background-color: rgb(216, 216, 216); width: 220px; height: 50px; border-radius: 10px;"></div>
+          </div> 
+          <div style="display: flex; position: relative; top: -85px; left: 25pt;">
+              <div style="z-index: 4; font-size: 11pt;">2021 카카오톡 ESG 보고서</div>
+              <div style="z-index: 4; font-size: 11pt; position: relative; left: 35pt;">2020 카카오톡 ESG 보고서</div>
+          </div>
+          <div style="display: flex; position: relative; top: -45px; left: 25pt;">
+              <div style="z-index: 4; font-size: 11pt;">카카오페이 ESG 보고서</div>
+              <div style="z-index: 4; font-size: 11pt; position: relative; left: 50pt;">카카오게임즈 ESG 보고서</div>
+          </div>
+          </div>
+                      </div>
+                  </div>
+              </div>
+              <div style="margin: auto; width: 1300px; height: 250px;">
+                  <div style="display: flex; margin: auto; width: 1200px; height: 250px; border-bottom: 1px solid rgb(236, 236, 236);">
+                      <div style="width: 250px; height: 250px;  display: flex; justify-content: center; align-items: center; font-size: 22pt;">기타 보고서</div>
+                      <div style="width: 450px; height: 250px; "></div>
+                      <div style="width: 500px; height: 250px; ">
+                          <div class="textbox3">
+                              <div style="display: flex; justify-content: center; gap: 10px;">
+                              <div style="background-color: rgb(216, 216, 216); width: 220px; height: 50px; border-radius: 1ch;"></div>
+              <div style="background-color: rgb(216, 216, 216); width: 220px; height: 50px; border-radius: 10px;"></div>
+          </div>
+          <div style="display: flex; justify-content: center; gap: 10px; position: relative; top: 10px;">
+              <div style="background-color: rgb(216, 216, 216); width: 220px; height: 50px; border-radius: 10px;"></div>
+              <div style="background-color: rgb(216, 216, 216); width: 220px; height: 50px; border-radius: 10px;"></div>
+          </div> 
+          <div style="display: flex; position: relative; top: -85px; left: 25pt;">
+              <div style="z-index: 4; font-size: 11pt;">2022 기업지배구조보고서</div>
+              <div style="z-index: 4; font-size: 11pt; position: relative; left: 40pt;">2021 기업지배구조보고서</div>
+          </div>
+          <div style="display: flex; position: relative; top: -45px; left: 25pt;">
+              <div style="z-index: 4; font-size: 11pt;">2020 기업지배구조보고서</div>
+              <div style="z-index: 4; font-size: 11pt; position: relative; left: 40pt;">2023 카카오 안정성 보고서</div>
+          </div>
+          </div>
+                      </div>
+                  </div></div>
+              <div style="margin: auto; width: 1300px; height: 250px;">
+                  <div style="display: flex; margin: auto; width: 1200px; height: 250px;">
+                      <div style="width: 250px; height: 250px;  display: flex; justify-content: center; align-items: center; font-size: 22pt;">정책&규정</div>
+                      <div style="width: 450px; height: 250px; "></div>
+                      <div style="width: 500px; height: 250px; ">
+                          <div class="textbox3">
+                              <div>
+                              <div style="background-color: rgb(216, 216, 216); width: 220px; height: 50px; border-radius: 10px; position: relative; left: 27px; top: -30px;"></div>
+          </div>
+          <div style="display: flex; position: relative; top: -65px; left: 25pt;">
+              <div style="z-index: 4; font-size: 11pt;">2022 기업지배구조보고서</div>
+          </div>
+                      </div>
+                  </div></div>
+          </div>
+      
+      
+      <div style="position: relative; top: 400px; margin: auto; width: 1500px; height: 600px;">
+          <div style="text-align: center; margin: auto; width: 400px; height: 100px; font-size: 22pt;">
+              <h2>ESG 평가 결과</h2></div>
+              <div style="display: flex; margin: auto; width: 1400px; height: 500px; gap: 40px;">
+                  <div style="width: 450px; height: 500px; box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18);">
+                  <div style="width: 450px; height: 80px; display: flex; align-items: center; position: relative; left: 15px;">
+                  <div><img src="https://www.kakaocorp.com/page/esg/msci_logo.png" width="140px"></div>
+                  </div>
+                  <div style="width: 450px; height: 150px; position: relative; top: 10px; left: 15px;">
+                  <div style="font-size: 25pt; font-weight: bold;">ESG 평가</div>
+                  <div style="font-size: 25pt; font-weight: bold;">AA등급 획득</div>
+                  <div style="color: gray;">(2022)</div>
+                  </div>
+                  <div style="width: 450px; height: 250px; display: flex; justify-content: flex-end; position: relative; right: 20px; top: -20px;">
+                  <div><img src="https://www.kakaocorp.com/page/esg/outcome_01.png"  width="230px" style="height: 270px;"></div>
+                  </div>
+              </div>
+                  <div style="width: 450px; height: 500px; box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18);">
+                      <div style="width: 450px; height: 80px; display: flex; align-items: center; position: relative; left: 15px;">
+                          <div><img src="https://www.kakaocorp.com/page/esg/esg_logo.png" width="140px"></div>
+                          </div>
+                          <div style="width: 450px; height: 150px; position: relative; top: 10px; left: 15px;">
+                          <div style="font-size: 25pt; font-weight: bold;">ESG 평가 통합부문</div>
+                          <div style="font-size: 25pt; font-weight: bold;">A등급 2년 연속 획득</div>
+                          <div style="color: gray;">(2021~2022)</div>
+                          </div>
+                          <div style="width: 450px; height: 250px; display: flex; justify-content: flex-end; position: relative; right: 20px; top: -20px;">
+                          <div><img src="https://www.kakaocorp.com/page/esg/outcome_02.png"  width="230px" style="height: 270px;"></div>
+                          </div></div>
+                  <div style="width: 450px; height: 500px; box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18);">
+                      <div style="width: 450px; height: 80px; display: flex; align-items: center; position: relative; left: 15px;">
+                          <div><img src="https://www.kakaocorp.com/page/esg/snp_logo.png" width="140px"></div>
+                          </div>
+                          <div style="width: 450px; height: 150px; position: relative; top: 10px; left: 15px;">
+                          <div style="font-size: 25pt; font-weight: bold;">산업군 최고점 획득,</div>
+                          <div style="font-size: 25pt; font-weight: bold;">'Top1%'로 선정</div>
+                          <div style="color: gray;">(2023)</div>
+                          </div>
+                          <div style="width: 450px; height: 250px; display: flex; justify-content: flex-end; position: relative; right: 20px; top: -20px;">
+                          <div><img src="https://www.kakaocorp.com/page/esg/outcome_03.png"  width="230px" style="height: 270px;"></div>
+                          </div>
+                      </div>
+              </div>
+      </div>
+      
+          
+                  <div style="position: relative; top: 550px; margin: auto; width: 1500px; height: 900px;">
+                      <div style="text-align: center; margin: auto; width: 1000px; height: 80px; font-size: 20pt;">
+                          <h2>파트너와 함께하는 지속가능한 성장</h2></div>
+                          <div style="text-align: center; margin: auto; width: 1000px; height: 40px; font-size: 15pt;">
+                              카카오 공동체는 파트너와 함께 성장한다는 믿음으로 선순환의 생태계를 만들어가고자</div>
+                              <div style="text-align: center; margin: auto; width: 1000px; height: 40px; font-size: 15pt;">
+                                  다양한 상생 프로그램을 운영하고 있습니다.</div>
+                                  <div style="width: 1500px; height: 600px; ">
+                                      <div class="bxslider">
+                                          <div>
+                                        <div style="height: 400px; background-color: black;">
+                                            <img class="slide-img"
+                                              src="https://www.kakaocorp.com/page/esg/img_fund_digital.png"
+                                            />
+                                      </div>
+                                    </div>
+                                      <div style="height: 400px; background-color: black;">
+                                          <div style="display: flex; justify-content: flex-end;">
+                                              <img class="slide-img"
+                                                src="https://www.kakaocorp.com/page/esg/img_fund_creater.png"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div style="height: 400px; background-color: black;">
+                                            <div style="display: flex; justify-content: flex-end;">
+                                              <img class="slide-img"
+                                                src="https://www.kakaocorp.com/page/esg/img_fund_with.png"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div style="height: 400px; background-color: black;">
+                                            <div style="display: flex; justify-content: flex-end;">
+                                              <img class="slide-img"
+                                                src="https://www.kakaocorp.com/page/esg/img_fund_farm.png"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div style="height: 400px; background-color: black;">
+                                              <div style="display: flex; justify-content: flex-end;">
+                                              <img class="slide-img"
+                                                src="https://www.kakaocorp.com/page/esg/img_fund_medic.png"
+                                              />
+                                          </div>
+                                            </div>
+                                          <div style="height: 400px; background-color: black;">
+                                              <div style="display: flex; justify-content: flex-end;">
+                                              <img class="slide-img"
+                                                src="https://www.kakaocorp.com/page/esg/img_fund_indie.png"
+                                              />
+                                          </div>
+                                      </div>
+                                      </div>
+                                  </div>
+                  </div>
+                  
+                  <div style="position: relative; top: 700px; margin: auto; width: 1500px; height: 900px;">
+                      <div style="text-align: center; margin: auto; width: 1000px; height: 100px; font-size: 22pt;">
+                          <h2>관련 사이트</h2></div>
+                          <div style="margin: auto; width: 1300px; height: 800px;">
+                              <div style="display: flex; width: 1300px; height: 200px; gap: 40px;">
+                                  <div style="width: 400px; height: 130px; box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18); border-radius: 10px;">
+                                  <div style="position: relative; top: 30px; left: 30px; font-weight: bold; font-size: 20pt; letter-spacing: -3px;">카카오 액티브그린</div>
+                                  <div style="position: relative; top: 50px; left: 30px; letter-spacing: -2px;">#이용자와함께 #카본인덱스</div>
+                                  <div style="display: flex; justify-content: center; align-items: center;
+                                   width: max-content; padding: 5px 10px 5px 10px;
+                                    border-radius: 34px; background-color: rgb(228, 228, 228);
+                                    margin-left: 340px; margin-top: -30px;
+                                    ">
+                                      <span style="font-size: 18pt; font-weight: 700;">↗</span></div>
+                                  </div>
+                                  <div style="width: 400px; height: 130px; box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18); border-radius: 10px;">
+                                  <div style="position: relative; top: 30px; left: 30px; font-weight: bold; font-size: 20pt; letter-spacing: -3px;">카카오같이가치</div>
+                                  <div style="position: relative; top: 50px; left: 30px; letter-spacing: -2px;">#기부 #모두의행동</div>
+                                  <div style="display: flex; justify-content: center; align-items: center;
+                                   width: max-content; padding: 5px 10px 5px 10px;
+                                    border-radius: 34px; background-color: rgb(228, 228, 228);
+                                    margin-left: 340px; margin-top: -30px;
+                                    ">
+                                      <span style="font-size: 18pt; font-weight: 700;">↗</span></div></div>
+                                  <div style="width: 400px; height: 130px; box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18); border-radius: 10px;">
+                                      <div style="position: relative; top: 30px; left: 30px; font-weight: bold; font-size: 20pt; letter-spacing: -3px;">카카오메이커스</div>
+                                      <div style="position: relative; top: 50px; left: 30px; letter-spacing: -2px;">#재고없는생산 #소셜임팩트</div>
+                                      <div style="display: flex; justify-content: center; align-items: center;
+                                       width: max-content; padding: 5px 10px 5px 10px;
+                                        border-radius: 34px; background-color: rgb(228, 228, 228);
+                                        margin-left: 340px; margin-top: -30px;
+                                        ">
+                                          <span style="font-size: 18pt; font-weight: 700;">↗</span></div>
+                                  </div>
+                              </div>
+                              <div style="display: flex; width: 1300px; height: 200px; gap: 40px;">
+                                  <div style="width: 400px; height: 130px; box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18); border-radius: 10px;">
+                                      <div style="position: relative; top: 30px; left: 30px; font-weight: bold; font-size: 20pt; letter-spacing: -3px;">카카오임팩트</div>
+                                      <div style="position: relative; top: 50px; left: 30px; letter-spacing: -2px;">#혁신가치 #사회문제해결</div>
+                                      <div style="display: flex; justify-content: center; align-items: center;
+                                       width: max-content; padding: 5px 10px 5px 10px;
+                                        border-radius: 34px; background-color: rgb(228, 228, 228);
+                                        margin-left: 340px; margin-top: -30px;
+                                        ">
+                                          <span style="font-size: 18pt; font-weight: 700;">↗</span></div>
+                                  </div>
+                                  <div style="width: 400px; height: 130px; box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18); border-radius: 10px;">
+                                      <div style="position: relative; top: 30px; left: 30px; font-weight: bold; font-size: 20pt; letter-spacing: -3px;">사이좋은 디지털 세상</div>
+                                      <div style="position: relative; top: 50px; left: 30px; letter-spacing: -2px;">#디지털시민 #청소년교육</div>
+                                      <div style="display: flex; justify-content: center; align-items: center;
+                                       width: max-content; padding: 5px 10px 5px 10px;
+                                        border-radius: 34px; background-color: rgb(228, 228, 228);
+                                        margin-left: 340px; margin-top: -30px;
+                                        ">
+                                          <span style="font-size: 18pt; font-weight: 700;">↗</span></div>
+                                  </div>
+                                  <div style="width: 400px; height: 130px; box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18); border-radius: 10px;">
+                                      <div style="position: relative; top: 30px; left: 30px; font-weight: bold; font-size: 20pt; letter-spacing: -3px;">카카오창작재단</div>
+                                      <div style="position: relative; top: 50px; left: 30px; letter-spacing: -2px;">#디지털 #창작자</div>
+                                      <div style="display: flex; justify-content: center; align-items: center;
+                                       width: max-content; padding: 5px 10px 5px 10px;
+                                        border-radius: 34px; background-color: rgb(228, 228, 228);
+                                        margin-left: 340px; margin-top: -30px;
+                                        ">
+                                          <span style="font-size: 18pt; font-weight: 700;">↗</span></div>
+                                  </div>
+                              </div>
+                              <div style="display: flex; width: 1300px; height: 200px; gap: 40px;">
+                                  <div style="width: 400px; height: 130px; box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18); border-radius: 10px;">
+                                      <div style="position: relative; top: 30px; left: 30px; font-weight: bold; font-size: 20pt; letter-spacing: -3px;">카카오 소신상인 프로젝트</div>
+                                      <div style="position: relative; top: 50px; left: 30px; letter-spacing: -2px;">#소상공인 #상생</div>
+                                      <div style="display: flex; justify-content: center; align-items: center;
+                                       width: max-content; padding: 5px 10px 5px 10px;
+                                        border-radius: 34px; background-color: rgb(228, 228, 228);
+                                        margin-left: 340px; margin-top: -30px;
+                                        ">
+                                          <span style="font-size: 18pt; font-weight: 700;">↗</span></div>
+                                  </div>
+                                  <div style="width: 400px; height: 130px; box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18); border-radius: 10px;">
+                                      <div style="position: relative; top: 30px; left: 30px; font-weight: bold; font-size: 20pt; letter-spacing: -3px;">우리동네 단골시장</div>
+                                      <div style="position: relative; top: 50px; left: 30px; letter-spacing: -2px;">#소상공인 #디지털전환</div>
+                                      <div style="display: flex; justify-content: center; align-items: center;
+                                       width: max-content; padding: 5px 10px 5px 10px;
+                                        border-radius: 34px; background-color: rgb(228, 228, 228);
+                                        margin-left: 340px; margin-top: -30px;
+                                        ">
+                                          <span style="font-size: 18pt; font-weight: 700;">↗</span></div>
+                                  </div>
+                                  <div style="width: 400px; height: 130px; box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18); border-radius: 10px;">
+                                      <div style="position: relative; top: 30px; left: 30px; font-weight: bold; font-size: 20pt; letter-spacing: -3px;">제주 with Kakao</div>
+                                      <div style="position: relative; top: 50px; left: 30px; letter-spacing: -2px;">#제주 #지역사회</div>
+                                      <div style="display: flex; justify-content: center; align-items: center;
+                                       width: max-content; padding: 5px 10px 5px 10px;
+                                        border-radius: 34px; background-color: rgb(228, 228, 228);
+                                        margin-left: 340px; margin-top: -30px;
+                                        ">
+                                          <span style="font-size: 18pt; font-weight: 700;">↗</span></div>
+                                  </div>
+                              </div>
+                              <div style="display: flex; width: 1300px; height: 200px; gap: 40px;">
+                                  <div style="width: 400px; height: 130px; box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18); border-radius: 10px;">
+                                      <div style="position: relative; top: 30px; left: 30px; font-weight: bold; font-size: 20pt; letter-spacing: -3px;">도로 위 히어로즈</div>
+                                      <div style="position: relative; top: 50px; left: 30px; letter-spacing: -2px;">#모빌리티 #의인상</div>
+                                      <div style="display: flex; justify-content: center; align-items: center;
+                                       width: max-content; padding: 5px 10px 5px 10px;
+                                        border-radius: 34px; background-color: rgb(228, 228, 228);
+                                        margin-left: 340px; margin-top: -30px;
+                                        ">
+                                          <span style="font-size: 18pt; font-weight: 700;">↗</span></div>
+                                  </div>
+                                  <div style="width: 400px; height: 130px; box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18); border-radius: 10px;">
+                                      <div style="position: relative; top: 30px; left: 30px; font-weight: bold; font-size: 20pt; letter-spacing: -3px;">카카오 테크 캠퍼스</div>
+                                      <div style="position: relative; top: 50px; left: 30px; letter-spacing: -2px;">#IT인재육성 #지역대학생</div>
+                                      <div style="display: flex; justify-content: center; align-items: center;
+                                       width: max-content; padding: 5px 10px 5px 10px;
+                                        border-radius: 34px; background-color: rgb(228, 228, 228);
+                                        margin-left: 340px; margin-top: -30px;
+                                        ">
+                                          <span style="font-size: 18pt; font-weight: 700;">↗</span></div>
+                                  </div>
+                                  </div>
+                          </div>
+                  </div>
+                 
+                  <div style="position: relative; top: 850px; margin: auto; width: 1500px; height: 700px;">
+                      <div style="text-align: center; margin: auto; width: 1000px; height: 100px; font-size: 22pt;">
+                          <h2>최근 소식</h2></div>
+                          <div style="display: flex; margin: auto; width: 1400px; height: 500px; gap: 40px;">
+                              <div  class="newsBox1">
+                              <div style="width: 450px; height: 100px; display: flex;">
+                              <div style="position: relative; top: 10px; left: 10px;"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562f7bc017800001.png?type=thumb&opt=C72x72.fwebp" width="40px"></div>
+                              <div style="background-color: rgb(235, 233, 233); width: 70px; height: 35px; border-radius: 15px; position: relative; top: 15px; left: 20px;"></div>
+                              <div style="position: relative; top: 20px; left: -35px; font-size: 11pt;">NEWS</div>
+                              </div>
+                              <div style="width: 450px; height: 150px;">
+                              <div style="position: relative; left: 15px; font-size: 22pt; font-weight: bold; top: -30px;">카카오임팩트,'전통시장</div>
+                              <div style="position: relative; left: 15px; font-size: 22pt; font-weight: bold; top: -30px;">활성화'로 대통령상 수상</div>
+                              <div style="position: relative; left: 15px;">#우리동네단골시장 #전국우수시장박람회</div>
+                              </div>
+                              <div style="width: 450px; height: 250px;">
+                              <div><img src="https://t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Fnews%2F045d72fa018b00001.jpg"  width="100%"></div>
+                              </div>
+                          </div>
+                              <div  class="newsBox2">
+                                  <div style="width: 450px; height: 100px; display: flex;">
+                                      <div style="position: relative; top: 10px; left: 10px;"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562f7bc017800001.png?type=thumb&opt=C72x72.fwebp" width="40px"></div>
+                              <div style="background-color: rgb(235, 233, 233); width: 70px; height: 35px; border-radius: 15px; position: relative; top: 15px; left: 20px;"></div>
+                              <div style="position: relative; top: 20px; left: -35px; font-size: 11pt;">NEWS</div>
+                                      </div>
+                                      <div style="width: 450px; height: 150px;">
+                                      <div style="position: relative; left: 15px; font-size: 22pt; font-weight: bold; top: -30px;">카카오임팩트-모두의연구소,</div>
+                                      <div style="position: relative; left: 15px; font-size: 22pt; font-weight: bold; top: -30px;">'사회문제 해결에 기여하는...</div>
+                                      <div style="position: relative; left: 15px;">#카카오임팩트 #테크포임팩트 #기술커뮤니티</div>
+                                      </div>
+                                      <div style="width: 450px; height: 250px;">
+                                      <div><img src="https://t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Fnews%2Fc9a4aa35018a00001.jpg"  width="100%"></div>
+                                      </div></div>
+                              <div  class="newsBox3">
+                                  <div style="width: 450px; height: 100px; display: flex;">
+                                      <div style="position: relative; top: 10px; left: 10px;"><img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562f7bc017800001.png?type=thumb&opt=C72x72.fwebp" width="40px"></div>
+                              <div style="background-color: rgb(235, 233, 233); width: 70px; height: 35px; border-radius: 15px; position: relative; top: 15px; left: 20px;"></div>
+                              <div style="position: relative; top: 20px; left: -35px; font-size: 11pt;">NEWS</div>
+                                      </div>
+                                      <div style="width: 450px; height: 150px;">
+                                      <div style="position: relative; left: 15px; font-size: 22pt; font-weight: bold; top: -30px;">카카오, 안정성 보고서 발간</div>
+                                      <div style="position: relative; left: 15px; top: 42px;">#카카오 #카카오 안정성 보고서</div>
+                                      </div>
+                                      <div style="width: 450px; height: 250px;">
+                                      <div><img src="https://t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Fnews%2F912c7e26018a00001.png"  width="100%"></div>
+                                      </div>
+                                  </div>
+                          </div>
+                  </div>
+                     
+  </body>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-1">
+      <span
+        ><li class="yellow_icon">
+          소개
+          <ul>
+            <li>카카오문화</li>
+            <li>공동체</li>
+            <li>연혁</li>
+          </ul>
+        </li>
+      </span>
+      <span
+        ><li class="yellow_icon">
+          이야기
+          <ul>
+            <li>콘텐츠 저장소</li>
+            <li>뚝딱뚝딱 성장기</li>
+            <li>숫자로 보는 카카오</li>
+          </ul>
+        </li>
+      </span>
+      <span><li class="yellow_icon">뉴스</li> </span>
+      <span
+        ><li class="yellow_icon">
+          기술과 서비스
+          <ul>
+            <li>기술</li>
+            <li>서비스</li>
+          </ul>
+        </li>
+      </span>
+      <span
+        ><li class="yellow_icon">
+          약속과 책임
+          <ul>
+            <li>카카오의 다짐</li>
+            <li>ESG</li>
+            <li>액티브그린</li>
+            <li>단골 만들기 챌린지</li>
+            <li>디지털 권리</li>
+            <li>AI 윤리</li>
+          </ul>
+        </li>
+      </span>
+      <span
+        ><li class="yellow_icon">
+          투자정보
+          <ul>
+            <li>기업지배구조</li>
+            <li>주가정보</li>
+            <li>재무정보</li>
+            <li>IR행사</li>
+            <li>공시정보</li>
+            <li>공고</li>
+          </ul>
+        </li>
+      </span>
+      <span
+        ><li class="yellow_icon">
+          고객센터
+          <ul>
+            <li>카카오 고객센터 ↗</li>
+            <li>Daum 고객센터 ↗</li>
+            <li>커머스 고객센터 ↗</li>
+            <li>&nbsp;</li>
+            <span class="bold_li"><li>인재영입 ↗</li></span>
+            <li>&nbsp;</li>
+            <span class="bold_li"><li>카카오계정 ↗</li></span>
+          </ul>
+        </li>
+      </span>
+    </div>
+    <div class="footer-2">
+      <div class="footer-2-menu">
+        <span id="clickMenu" onclick="clickshow(this)"
+          >이용약관
+          <span>∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>카카오계정 서비스 ↗</li>
+              <li>카카오 서비스 ↗</li>
+              <li>Daum 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu" onclick="clickshow(this)"
+          >위치정보 이용약관 <span>∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>카카오 서비스 ↗</li>
+              <li>Daum 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu" onclick="clickshow(this)"
+          >개인정보처리방침 <span>∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>기업사이트</li>
+              <li>카카오 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu">운영정책</span>
+
+        <span id="clickMenu" onclick="clickshow(this)"
+          >청소년보호정책 <span>∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>카카오 서비스 ↗</li>
+              <li>Daum 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu">브랜드보호정책</span>
+
+        <span id="clickMenu">권리침해신고안내</span>
+
+        <span id="clickMenu" onclick="clickshow(this)"
+          >공지사항<span id="angle_bracket5">∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>투자정보 공지</li>
+              <li>카카오 서비스 ↗</li>
+              <li>Daum 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu">사이버윤리실</span>
+
+        <span id="clickMenu">Contact Us</span>
+      </div>
+      <span class="copyright">© Kakao Corp. All rights reserved.</span>
+      <div class="relatedSites">
+        <span
+          id="relatedSites"
+          onclick="relatedShow(this,'relatedSites-sub','relatedSites-btn')"
+          >관련사이트<span id="relatedSites-btn">+</span>
+          <div class="relatedSites-sub" id="relatedSites-sub">
+            <ul>
+              <li>카카오 AI ↗</li>
+              <li>카카오 프라이버시 ↗</li>
+              <li>카카오 디벨로퍼스 ↗</li>
+              <li>다음 포털 사이트 ↗</li>
+              <li>동반 성장 사이트 ↗</li>
+              <li>제주 with kakao ↗</li>
+            </ul>
+          </div>
+        </span>
+      </div>
+    </div>
+  </footer>
+</html>

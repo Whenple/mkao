@@ -1,0 +1,896 @@
+.sub-header-tit {
+  width: 100%;
+}
+
+.move_list {
+  position: relative;
+  margin-right: 9%;
+  width: 600px;
+
+  padding-left: 10px;
+  vertical-align: top;
+  left: 8px;
+}
+.list li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.scroll_move {
+  display: inline-block;
+  padding: 7px 0;
+  font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.23px;
+  margin-top: 10px;
+  color: #000;
+}
+.scrol2_move {
+  display: inline-block;
+  padding: 7px 15px;
+  font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.23px;
+  color: #000;
+  margin-left: 15px;
+  margin-top: 10px;
+  border-left: 1px solid #d8d8d8;
+}
+.scrol3_move {
+  display: inline-block;
+  padding: 7px 15px;
+  font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.23px;
+  color: #000;
+  margin-top: 10px;
+  border-left: 1px solid #d8d8d8;
+}
+
+dl,
+menu,
+ol,
+ul {
+  list-style: none;
+}
+/* 카카오 단골 만들기 챌린지 */
+.area_title {
+  text-align: center;
+}
+.wrap_subinfo {
+  display: inline-block;
+  font-size: 18px;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+.tit_detail.tit_main {
+  overflow: hidden;
+  font-size: 42px;
+  display: block;
+  margin-top: 24px;
+}
+.tit_main {
+  font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+    sans-serif;
+}
+/* 메인 이미지 */
+.area_visual {
+  overflow: hidden;
+  overflow: hidden;
+  max-width: 1920px;
+  margin: 72px auto 0;
+}
+.main_img {
+  width: 100%;
+  border-radius: 12px;
+}
+/* 메인 */
+.wrap_dangol {
+  margin: 120px auto 0;
+  display: block;
+  max-width: 816px;
+  /* text-align: center; */
+}
+/* 챌린지 참여하기 */
+.box_introduce {
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  text-align: center;
+  width: auto;
+  padding: 64px 108px;
+  border: 12px black;
+}
+.tit_top {
+  font-size: 22px;
+  line-height: 32px;
+}
+.desc_top {
+  margin-top: 24px;
+}
+.tit_bottom {
+  margin-top: 24px;
+  padding-top: 25px;
+  border-top: 1px solid #979797;
+}
+.desc_bottom {
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 7px;
+}
+.chel_link_btn {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+}
+
+a,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+.wrap_btn {
+  text-align: center;
+}
+/* 신청방법 */
+.btn_dangol {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+.btn_dangol:hover {
+  background-color: #434443;
+}
+.btn_dangol.type_big {
+  width: 296px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 30px;
+  font-size: 18px;
+  margin: 65px 0 120px;
+}
+.inner_dangol.inner_step {
+  margin-top: 0;
+}
+
+.inner_tit.type_emph {
+  text-decoration: underline;
+  display: block;
+  font-size: 22px;
+  letter-spacing: -0.6px;
+  line-height: 32px;
+  text-align: center;
+  color: #000;
+}
+
+.box_step1 {
+  margin-top: 24px;
+  box-sizing: border-box;
+  position: relative;
+  height: 242px;
+  padding: 40px 0 40px 320px;
+  background-image: url("../img/step1.png");
+  background-size: 138px 210px;
+  background-position: 90px 30px;
+  background-color: #f7f7f7;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+}
+.box_step1_tit {
+  text-align: -webkit-match-parent;
+  font-size: 22px;
+  line-height: 32px;
+  color: #333;
+}
+.box_step1_inner {
+  margin-top: 6px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: -webkit-match-parent;
+}
+.wrap_btn.step1_btn {
+  position: relative;
+  right: 110px;
+  top: 25px;
+}
+
+.btn_dangol.type_small {
+  position: relative;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 21px;
+  font-size: 14px;
+  padding: 0 30px 0 20px;
+}
+.btn_dangol.type_small > img {
+  width: 12px;
+  position: relative;
+  top: 1px;
+  left: 10px;
+}
+/* 다운화살표 */
+.arrow_down {
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+.arrow_down > img {
+  width: 54px;
+}
+
+/* 박스스텝2 */
+.box_step2 {
+  margin-top: 40px;
+  box-sizing: border-box;
+  position: relative;
+  height: 242px;
+  padding: 40px 0 40px 320px;
+  background-image: url("../img/step2.png");
+  background-size: 138px 210px;
+  background-position: 90px 30px;
+  background-color: #f7f7f7;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+}
+.box_step2_tit {
+  text-align: -webkit-match-parent;
+  font-size: 22px;
+  line-height: 32px;
+  color: #333;
+}
+.box_step2_inner {
+  margin-top: 6px;
+  font-size: 156x;
+  line-height: 26px;
+  text-align: -webkit-match-parent;
+}
+.wrap_btn.step2_btn {
+  position: relative;
+  right: 170px;
+  top: 25px;
+}
+/* 박스스텝3 */
+.box_step3 {
+  margin-top: 40px;
+  box-sizing: border-box;
+  position: relative;
+  height: 242px;
+  padding: 40px 0 40px 320px;
+  background-image: url("../img/step3.png");
+  background-size: 138px 210px;
+  background-position: 90px 30px;
+  background-color: #f7f7f7;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+}
+.box_step3_tit {
+  text-align: -webkit-match-parent;
+  font-size: 22px;
+  line-height: 32px;
+  color: #333;
+}
+.box_step3_inner {
+  margin-top: 6px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: -webkit-match-parent;
+}
+.wrap_btn.step3_btn {
+  position: relative;
+  right: 170px;
+  top: 25px;
+}
+/* 스텝참조 */
+.box_step_reference {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 16px;
+  color: #333;
+}
+
+/* 혜택을 드려요 */
+.inner_dangol.inner_benefit {
+  margin-top: 60px;
+  position: relative;
+}
+/* 성공 시 */
+.successBox_tit {
+  display: block;
+  font-size: 22px;
+  letter-spacing: -0.6px;
+  line-height: 32px;
+  text-align: center;
+}
+.scuccesBox_area {
+  overflow: hidden;
+  font-size: 0;
+  margin: 0 0 0 -24px;
+  width: auto;
+}
+
+.scuccesBox1_img {
+  /* position: absolute; */
+}
+
+.scuccesBox1_img > img {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 104px;
+}
+
+.scuccesBox1 {
+  background-color: #abeeff;
+  width: 396px;
+  height: 168px;
+  padding: 32px 170px 24px 32px;
+  margin: 24px 0 0 24px;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+  vertical-align: top;
+}
+.scuccesBox1_big_text {
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  line-height: 32px;
+}
+
+.scuccesBox1_smoll_text {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.scuccesBox2_img > img {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 104px;
+}
+.scuccesBox2 {
+  background-color: #c1f6be;
+  width: 396px;
+  height: 168px;
+  padding: 32px 170px 24px 32px;
+  margin: 24px 0 0 24px;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+  vertical-align: top;
+}
+.scuccesBox2_big_text {
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  line-height: 32px;
+}
+
+.scuccesBox2_smoll_text {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.scuccesBox3_img > img {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 104px;
+}
+.scuccesBox3 {
+  background-color: #ffd2ff;
+  width: 396px;
+  height: 168px;
+  padding: 32px 170px 24px 32px;
+  margin: 24px 0 0 24px;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+  vertical-align: top;
+}
+.scuccesBox3_big_text {
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  line-height: 32px;
+}
+
+.scuccesBox3_smoll_text {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.scuccesBox4_img > img {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 104px;
+}
+.scuccesBox4 {
+  background-color: #d2cdff;
+  width: 396px;
+  height: 168px;
+  padding: 32px 170px 24px 32px;
+  margin: 24px 0 0 24px;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+  vertical-align: top;
+}
+.scuccesBox4_big_text {
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  line-height: 32px;
+}
+
+.scuccesBox4_smoll_text {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* 실패 시 */
+.inner_dangol.inner_worry {
+  margin-top: 60px;
+}
+
+.worryBox_tit {
+  display: block;
+  font-size: 22px;
+  letter-spacing: -0.6px;
+  line-height: 32px;
+  text-align: center;
+}
+.worryBox_area {
+  overflow: hidden;
+  font-size: 0;
+  margin: 0 0 0 -24px;
+}
+
+.worryBox1_img {
+  /* position: absolute; */
+}
+
+.worryBox1_img > img {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 104px;
+}
+
+.worryBox1 {
+  background-color: #fdf9db;
+  width: 396px;
+  height: 168px;
+  padding: 32px 170px 24px 32px;
+  margin: 24px 0 0 24px;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+  vertical-align: top;
+}
+.worryBox1_big_text {
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  line-height: 32px;
+}
+
+.worryBox1_smoll_text {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 26px;
+}
+
+.worryBox2_img > img {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 104px;
+}
+.worryBox2 {
+  background-color: #ffdf8c;
+  width: 396px;
+  height: 168px;
+  padding: 32px 170px 24px 32px;
+  margin: 24px 0 0 24px;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+  vertical-align: top;
+}
+.worryBox2_big_text {
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  line-height: 32px;
+}
+
+.worryBox2_smoll_text {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 26px;
+}
+
+/* 미션 달성 노하우 */
+.area_dangol.area_knowhow.area_anchor {
+  display: block;
+}
+.dangol_missiinTip_tit {
+  text-align: center;
+  color: #000;
+  font-size: 32px;
+  letter-spacing: -0.8px;
+  line-height: 44px;
+}
+.dangol_missiinTip_subtit {
+  margin-top: 48px;
+  display: block;
+  font-size: 22px;
+  letter-spacing: -0.6px;
+  line-height: 32px;
+  text-align: center;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+}
+.dangol_missiinTip_subsubtit {
+  display: block;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #000;
+}
+.list_link_area {
+  margin: 0px 0 0 -24px;
+  /* font-size: 0; */
+  list-style: none;
+  display: block;
+  overflow: hidden;
+  width: 860px;
+  height: 430px;
+}
+
+/* 미션 달성 노하우 박스 */
+.mision_list_link_area {
+  width: auto;
+}
+
+.list_box1_area {
+  display: inline-block;
+  vertical-align: top;
+  margin: 24px 0 0 24px;
+}
+.move_list > li {
+  float: left;
+  display: inline-block;
+  /* clear: both; */
+}
+.list_box1 {
+  width: 396px;
+  height: 112px;
+  padding: 24px 90px 24px 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.09);
+}
+.list_box1:hover {
+  box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18);
+  /* transform: translateY(-8px);
+    transition: .5s; */
+  margin-top: -8px;
+  transition: 0.5s;
+}
+
+.list_box2_area {
+  display: inline-block;
+  vertical-align: top;
+  margin: 24px 0 0 24px;
+}
+.list_box2 {
+  width: 396px;
+  height: 112px;
+  padding: 24px 90px 24px 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.09);
+}
+.list_box2:hover {
+  word-break: break-all;
+  box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18);
+  /* transform: translateY(-8px);
+    transition: 0.5s; */
+  margin-top: -8px;
+  transition: 0.5s;
+}
+.list_box3_area {
+  display: inline-block;
+  vertical-align: top;
+  margin: 24px 0 0 24px;
+}
+.list_box3 {
+  width: 396px;
+  height: 112px;
+  padding: 24px 90px 24px 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.09);
+}
+.list_box3:hover {
+  box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.18);
+  /* transform: translateY(-8px);
+    transition: .5s; */
+  margin-top: -8px;
+  transition: 0.5s;
+}
+.list_box4_area {
+  display: inline-block;
+  vertical-align: top;
+  margin: 24px 0 0 24px;
+}
+.list_box4 {
+  width: 396px;
+  height: 112px;
+  padding: 24px 90px 24px 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.09);
+}
+.list_box4:hover {
+  box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18);
+  /* transform: translateY(-8px);
+  transition: .5s; */
+  margin-top: -8px;
+  transition: 0.5s;
+}
+.list_link_box_tit {
+  display: block;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  color: #000;
+}
+.list_link_box_sub {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #888;
+}
+circle {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background-color: #eee;
+}
+circle > img {
+  width: 12px;
+  position: relative;
+  top: 10px;
+  left: 16px;
+}
+circle:hover {
+  background-color: #dfdfdf;
+}
+.inner_dangol_ex {
+  margin-top: 30px;
+}
+
+.inner_tit.type_emph {
+  text-decoration: underline;
+  display: block;
+  font-size: 22px;
+  letter-spacing: -0.6px;
+  line-height: 32px;
+  text-align: center;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sub_dangol {
+  display: block;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #000;
+}
+
+.slick-slide img {
+  width: 300px;
+  border-radius: 10px;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  border: 0;
+  position: relative;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 100%;
+}
+
+.ys_img_box {
+  position: absolute;
+}
+.ys_box_text {
+  height: 114px;
+  padding: 22px 20px 20px;
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), hsla(0, 0%, 100%, 0));
+  color: #fff;
+  text-align: center;
+  z-index: 5;
+}
+.ys_box_text.box2 {
+  left: 0;
+  bottom: 0;
+  right: 400px;
+}
+.ys_box_text.box3 {
+  left: 400px;
+}
+/* line-height: 20px;
+  font-size: 14px;
+  letter-spacing: -0.2px; */
+.ys_sub_slide {
+  line-height: 20px;
+  font-size: 14px;
+  letter-spacing: -0.2px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ys_sub_tit {
+  margin-top: 8px;
+  font-size: 18px;
+  line-height: 24px;
+  overflow: hidden;
+  display: block;
+  letter-spacing: -0.6px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dangol_program_tit {
+  font-size: 32px;
+  letter-spacing: -0.8px;
+  line-height: 44px;
+  text-align: center;
+  color: #000;
+}
+.dangol_program_subtit {
+  display: block;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.box_program {
+  margin-top: 24px;
+  padding: 57px 64px;
+  background-color: #fdf9db;
+  color: #000;
+  border-radius: 12px;
+}
+.box_program_area {
+  position: static;
+  padding-left: 0;
+}
+.box_program_tit {
+  position: static;
+  font-size: 22px;
+  letter-spacing: -0.6px;
+  line-height: 32px;
+  font-weight: bold;
+  color: #000;
+}
+.box_program_sub {
+  margin-top: 10px;
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  line-height: 26px;
+  display: block;
+  font-weight: 700;
+}
+.box_program_subsub {
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  line-height: 26px;
+  color: #000;
+}
+
+.box_program_subsubsub {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  color: #666;
+}
+.box_program_link {
+  margin-top: 20px;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.44px;
+  line-height: 26px;
+  color: #333;
+}
+.area_program .box_program .box_program_area + .box_program_area {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #bab48f;
+}
+
+.dangol_faq {
+  margin: 120px 0 182px;
+}
+.dangol_faq > h4 {
+  font-size: 32px;
+  letter-spacing: -0.8px;
+  line-height: 44px;
+  text-align: center;
+}
+.btn_qna {
+  display: block;
+  width: 180px;
+  height: 60px;
+  margin: 40px auto 0;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #eee;
+  color: #000;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  line-height: 60px;
+  font-weight: 700;
+}
+.btn_qna:hover {
+  background-color: #000;
+  color: #eee;
+}

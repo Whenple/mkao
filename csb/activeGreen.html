@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>액티브그린 | 카카오</title>
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/kstyle.css" />
+    <link rel="stylesheet" href="./css/activegreem.css">
+    <link rel="stylesheet" href="./css/popUp.css">
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/kmain.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 헤더 -->
+      <header class="main_header">
+        <!-- 메인 헤더 -->
+        <div class="header">
+          <!-- 카카오로고 -->
+          <div class="logo"><a href="../kms/kmain.html">kakao</a></div>
+          <!-- 네비 -->
+          <div class="navigation">
+            <ul>
+              <!-- 소개 -->
+              <li class="intro menu" onclick="showHeader(this)">
+                <a>소개</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="intro-btn">
+                    <a href="">카카오 문화</a>
+                    <a href="">공동체</a>
+                    <a href="">연혁</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- 이야기 -->
+              <li class="story menu" onclick="showHeader(this)">
+                <a>이야기</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="story-btn">
+                    <a href="">콘텐츠저장소</a>
+                    <a href="../lgr/kdduk_final.html">뚝딱뚝딱성장기</a>
+                    <a href="">숫자로보는카카오</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- 뉴스 -->
+              <li class="news menu"><a class="news-btn" href="">뉴스</a></li>
+              <!-- 기술과 서비스 -->
+              <li class="tech menu" onclick="showHeader(this)">
+                <a>기술과서비스</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="tech-btn">
+                    <a href="">기술</a>
+                    <a href="">서비스</a>
+                  </li>
+                </ul>
+              </li>
+              <!--  약속과 책임 -->
+              <li class="promise menu" onclick="showHeader(this)">
+                <a>약속과책임</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="promise-btn">
+                    <a href="">카카오의 다짐</a>
+                    <a href="../ljh/esg.html">ESG</a>
+                    <a href="activeGreen.html">액티브그린</a>
+                    <a href="../bys/dangolchallenge.html">단골만들기챌린지</a>
+                    <a href="digitalRights.html">디지털권리</a>
+                    <a href="">AI윤리</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 상단 버튼 -->
+          <div class="util-btn">
+            <button class="search btn">
+              <img src="./img/search.png" alt="검색버튼" />
+            </button>
+            <button class="language btn">
+              <img src="./img/language.png" alt="언어변경버튼" />
+            </button>
+            <button class="nightmode btn" value="night" onclick="nightmode()">
+              <img src="./img/night_mode.png" alt="야간모드버튼" />
+            </button>
+          </div>
+        </div>
+        <!-- 서브 헤더 -->
+        <div class="sub-header">
+          <img
+            class="sub-header-icon"
+            src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/6f187cca018800001.png?type=thumb&opt=C72x72.fwebp"
+            alt=""
+          />
+          <span class="sub-header-txt">액티브그린</span>
+        </div>
+      </header>
+      <!-- 메인내용 -->
+      <main>
+        <!-- <div style="width: 100vw; height: 5000px; border: 2px dotted red"> -->
+        
+      <div class="wrapper" id="pageTop">
+        <!-- 액티브그린 로고 -->
+        
+        <div class="top" style=" margin-left: auto; margin-right: auto;">
+            <div class="logo-and-title">
+                <div class="actGreen_logo">
+                  <div id="logo-img"><img style="width: 75px;" src="https://www.kakaocorp.com/page/ico_tit_activegreen.gif" alt=""></div>
+                    <div id="logo-text"><b>액티브그린</b></div>
+                </div>
+                <div id="top-title" style="font-size: 23pt;">카카오를 이용하는 만큼 우리들의 지구도 더 풍요로울 수 있도록</div>
+            </div>
+            <div id="top-text">카카오는 서비스와 플랫폼을 통해 이용자가 더 쉽고 영향력 있게 친환경 활동에 참여할 수 있도록 기여하고자 합니다.</div>
+            </div>
+
+<!-- 본문 내용 -->
+
+<!-- 본문 1 (지구 이미지와 숫자)-->
+
+<div class="container" style=" margin-left: auto; margin-right: auto;">
+    
+  <div class="contents content1" style=" margin-left: auto; margin-right: auto;">
+  <div class="earth">
+      <div class="number-text">
+      <div id="number-text"><b>2022년 이용자 환경 기여 임팩트 지표,카본인덱스</b></div>
+      <div >beta</div>
+      </div>
+
+      <div class="number">
+      <div id="number"><b><b>63,263,548</b></b></div>
+      <div id="kuc"><b>KUC</b></div>
+      </div>
+
+      <div class="button" id="button1">카카오 카본인덱스란?</div>
+  </div>
+  </div>
+
+
+<!-- 본문 2 (3개 카드)-->
+
+<div class="contents content2" style=" margin-left: auto; margin-right: auto;">
+
+  <div class="tbls tbl1">
+      <div><img  style="width: 230px;"
+      src="https://www.kakaocorp.com/page/activegreen/img_bnr_1.png" alt=""></div>
+      <div class="img1-text">
+          <div style="font-size: 20pt; text-align: center;"><b>나무 40만 그루</b></div>
+          <div style="margin-top: 10px; text-align: center;">여의도 면적 4배 규모의 숲이<br>
+              탄소 흡수에 기여하는 효과</div>
+      </div>
+  </div>
+
+  <div class="tbls tbl2">
+      <div><img  style="width: 230px; margin-top: 28px;"
+      src="https://www.kakaocorp.com/page/activegreen/img_bnr_2.png" alt=""></div>
+      <div class="img2-text">
+          <div style="font-size: 20pt; text-align: center;"><b>18억 7천만원</b></div>
+          <div style="margin-top: 10px; text-align: center;">이용자와 카카오가 함께모은<br>
+              환경을 위한 기금</div>
+      </div>
+  </div>
+
+  <div class="tbls tbl3">
+      <div><img  style="width: 230px;"
+      src="https://www.kakaocorp.com/page/activegreen/img_bnr_3.png" alt=""></div>
+      <div class="img3-text">
+          <div style="font-size: 20pt; text-align: center;"><b>5,287,128명</b></div>
+          <div style="margin-top: 10px; text-align: center;">친환경 기여 활동에 참여한<br>
+          이용자 수</div>
+      </div>
+  </div>
+
+  </div>
+
+
+<!-- 본문 3 (4개 카드)-->
+
+<div style="margin-top: 130px;">
+
+  <div class="box-title-text">
+  <div><b>카카오를 통해 전환하기</b><img class="text-back-img1" style="width: 75px; height: 40px;" src="https://www.kakaocorp.com/page/activegreen/emph_txt.png" alt=""></div>
+  </div>
+
+  <div class="boxs box1">
+
+  <div class="blocks" style="margin: 24px 0 0 24px;">
+
+  <div class="block1">
+      
+      <div class="box-text1">
+          <div style="font-size: 19pt; margin-top: 15px; margin-left: 20px;"><b>더 많은 전기차 이용하기</b></div>
+          <div style="font-size: 11pt; margin-top: 10px; margin-left: 20px;">카카오T 전기택시,<br>전기차 총 이동거리</div>
+      </div>
+
+      <div class="block-bottom1">
+          <div class="block1-img1"><img style="width: 230px; " src="https://www.kakaocorp.com/page/activegreen/img_transform_1_2.png" alt=""></div>
+          <div class="block1-img2"><img style="width: 200px; " src="https://www.kakaocorp.com/page/activegreen/img_transform_1_1.png" alt=""></div>
+          <div class="buttons b1">+</div>
+      </div>
+      
+      </div>
+      
+  </div>
+
+
+  <div class="blocks" style="margin: 24px 0 0 24px;">
+
+      <div class="block2">
+          <div style="font-size: 19pt; margin-top: 15px; margin-left: 20px;"><b>전자 문서•청구서 전환하기</b></div>
+          <div style="font-size: 11pt; margin-top: 10px; margin-left: 20px;">카카오페이 전환 건수</div>
+
+      <div class="block-bottom2">
+          <div class="block2-img1"><img style="width: 216px;" src="https://www.kakaocorp.com/page/activegreen/img_transform_2_2.png" alt=""></div>
+          <div class="block2-img2"><img style="width: 200px; " src="https://www.kakaocorp.com/page/activegreen/img_transform_2_1.png" alt=""></div>
+          <div class="buttons b2">+</div>
+      </div>
+      
+      </div>
+      
+  </div>
+
+  
+  
+  <div class="blocks" style="margin: 24px 0 0 24px;">
+      
+      <div class="block3">
+          <div style="font-size: 19pt; margin-top: 15px; margin-left: 20px;"><b>지구와 지갑을 지키는<br>자전거 타기</b></div>
+          <div style="font-size: 11pt; margin-top: 10px; margin-left: 20px;">카카오맵 자전거,<br>카카오T바이크 총 이동거리</div>
+          
+          <div class="block-bottom3">
+              <div class="block3-img1"><img style="width: 210px;" src="https://www.kakaocorp.com/page/activegreen/img_transform_3_2.png" alt=""></div>
+              <div class="block3-img2"><img style="width: 200px; " src="https://www.kakaocorp.com/page/activegreen/img_transform_3_1.png" alt=""></div>
+              <div class="buttons b3">+</div>
+          </div>
+          
+      </div>
+      
+  </div>
+  
+  
+      <div class="blocks" style="margin: 24px 0 0 24px;">
+
+          <div class="block4">
+              <div style="font-size: 19pt; margin-top: 15px; margin-left: 20px;"><b>저탄소 그린 선물하기</b></div>
+              <div style="font-size: 11pt; margin-top: 10px; margin-left: 20px;">카카오톡 선물하기의<br>그린 선물 구매자 수</div>
+              
+              <div class="block-bottom4">
+                  <div class="block4-img1"><img style="width: 190px;" src="https://www.kakaocorp.com/page/activegreen/img_transform_4_2.png" alt=""></div>
+                  <div class="block4-img2"><img style="width: 200px; " src="https://www.kakaocorp.com/page/activegreen/img_transform_4_1.png" alt=""></div>
+                  <div class="buttons b4">+</button></div>
+              </div>
+              
+          </div>
+          
+      </div>
+      
+  </div>
+</div>
+
+<!-- 본문 4 (4개 카드)-->
+
+<div style=" margin-top: 130px;">
+
+  <div class="box-title-text">
+  <div><b>카카오를 통해 순환에 참여하기</b>
+  <img class="text-back-img2" style="width: 75px; height: 40px;" src="https://www.kakaocorp.com/page/activegreen/emph_txt.png" alt=""></div>
+  </div>
+
+  <div class="boxs box2">
+
+  <div class="blocks" style="margin: 24px 0 0 24px; background-color: #fff564;">
+
+      <div class="block1">
+      
+      <div class="box-text1">
+          <div style="font-size: 19pt; margin-top: 15px; margin-left: 20px;"><b>쓰레기 없는<br>내 주변 상점 찾기</b></div>
+          <div style="font-size: 11pt; margin-top: 10px; margin-left: 20px;">카카오맵 장소검색 #제로웨이스트<br>#일회용품없는가게</div>
+      </div>
+
+      <div class="block2-bottom1">
+          <div class="block2-bottom1-img1"><img style="width: 300px; " src="https://www.kakaocorp.com/page/activegreen/img_cycle_1_2.png" alt=""></div>
+          <div class="block2-bottom1-img2"><img style="width: 200px; " src="https://www.kakaocorp.com/page/activegreen/img_cycle_1_1.png" alt=""></div>
+          <div class="buttons2-b1">↗</div>
+      </div>
+      
+      </div>
+      
+  </div>
+
+
+  <div class="blocks" style="margin: 24px 0 0 24px;">
+
+      <div class="block2">
+          <div style="font-size: 19pt; margin-top: 15px; margin-left: 20px;"><b>버려지는 헌 의류에서<br>새로운 쓸모를 찾은 제품</b></div>
+
+      <div class="block2-bottom2">
+          <div class="block2-bottom2-img1"><img style="width: 160px;" src="https://www.kakaocorp.com/page/activegreen/img_cycle_2_2.png" alt=""></div>
+          <div class="block2-bottom2-img2"><img style="width: 200px; " src="https://www.kakaocorp.com/page/activegreen/img_cycle_2_1.png" alt=""></div>
+          <div class="buttons2-b2">+</div>
+      </div>
+      
+      </div>
+      
+  </div>
+
+  
+  
+  <div class="blocks" style="margin: 24px 0 0 24px; background-image: url(https://www.kakaocorp.com/page/activegreen/img_cycle_3_2.png);
+                              background-size: cover;">
+      
+      <div class="block3">
+          <div style="font-size: 19pt; margin-top: 15px; margin-left: 20px;"><b>요람에서 다시 요람까지<br>카카오프렌즈 친환경 포장</b></div>
+          
+          <div class="block2-bottom3">
+              <!-- <div class="block2-bottom3-img1"><img style="width: 160px;" src="https://www.kakaocorp.com/page/activegreen/img_transform_3_2.png" alt=""></div> -->
+              <div class="block2-bottom3-img2"><img style="width: 200px; " src="https://www.kakaocorp.com/page/activegreen/img_cycle_3_1.png" alt=""></div>
+              <div class="buttons2-b3">+</div>
+          </div>
+          
+      </div>
+      
+  </div>
+  
+  
+      <div class="blocks" style="background-color: #00102f; margin: 24px 0 0 24px;">
+
+          <div class="block4">
+              <div style="font-size: 19pt; margin-top: 15px; margin-left: 20px; color: white;"><b>산지폐기될 뻔한<br>농수산물을 제값 주는<br>상품으로</b></div>
+              
+              <div class="block2-bottom4">
+                  <div class="block2-bottom4-img1"><img style="width: 180px;" src="https://www.kakaocorp.com/page/activegreen/img_cycle_4_2.png" alt=""></div>
+                  <div class="block2-bottom4-img2"><img style="width: 200px; " src="https://www.kakaocorp.com/page/activegreen/img_cycle_4_1.png" alt=""></div>
+                  <div class="buttons2-b4">+</div>
+              </div>
+              
+          </div>
+          
+      </div>
+      
+  </div>
+
+</div>
+
+
+<!-- 본문 5 (슬라이드)-->
+
+<div>
+
+  <div class="slider">
+  
+      <div class="box-title-text">
+          <div><b>카카오를 통해 그린 디지털 생성하기</b>
+          <img class="text-back-img3" style="width: 180px; height: 40px;" src="https://www.kakaocorp.com/page/activegreen/emph_txt.png" alt=""></div>
+          </div>
+  
+  <div class="slider-top">
+      
+      <div class="slider-box1">
+      
+          <div class="slider-box1-texts">
+          <div class="slider-box1-text1" ><b>카카오톡 미디어<br>공유 버튼 이용하기</b></div>
+          <div class="slider-box1-text2">데이터 추가 소비 제로</div>
+          <div class="slider-box1-text3"><b>0 </b><span style="color: red; font-size: 15pt;">▼</span></div>
+          </div>
+      
+          <div><img style="width: 127px; margin-left: 120px; margin-top: 53px;" 
+          src="https://www.kakaocorp.com/page/activegreen/img_digital_1_1.png" alt=""></div>
+          
+          </div>
+  
+          <div class="slider-box2">
+      
+          <div class="slider-box2-texts">
+          <div class="slider-box2-text1" ><b>스마트폰<br>타크모드 설정</b></div>
+          <div class="slider-box2-text2">에너지 사용 절감 효과</div>
+          <div class="slider-box2-text3"><b>20% </b><span style="color: red; font-size: 15pt;">▼</span></div>
+          </div>
+          
+          <div><img style="width: 127px; margin-left: 128px; margin-top: 43px;" 
+          src="https://www.kakaocorp.com/page/activegreen/img_digital_2_1.png" alt=""></div>
+          
+          </div>
+  
+          <div class="slider-box3">
+      
+          <div class="slider-box3-texts">
+          <div class="slider-box3-text1" ><b>전자문서,<br>전자청구서 설정</b></div>
+          <div class="slider-box3-text2">종이 사용 및 발송 비용 제로</div>
+          <div class="slider-box3-text3"><b>0 <span style="color: red; font-size: 15pt;">–</span></b></div>
+          </div>
+              
+          <div><img style="width: 140px; margin-left: 114px; margin-top: 36px;" 
+          src="https://www.kakaocorp.com/page/activegreen/img_digital_3_1.png" alt=""></div>
+      
+          </div>
+  
+          <div class="slider-box4">
+      
+          <div class="slider-box4-texts">
+          <div class="slider-box4-text1" ><b>카카오•다음 메일<br>에코모드 설정</b></div>
+          <div class="slider-box4-text2">7일 후 휴지통 자동 비우기</div>
+          <div class="slider-box4-text3"><b>7일</b></div>
+          </div>
+          
+          <div><img style="width: 140px; margin-left: 110px; margin-top: 30px;" 
+          src="https://www.kakaocorp.com/page/activegreen/img_digital_4_1.png" alt=""></div>
+      
+          </div>
+  
+      <div class="slider-box">
+          <div class="slider-last">
+          <div id="circle">↗</div>
+          <div id="slider-last-text">
+          <b>그린 디지털 캠페인<br>참여하러 가기</b>
+          </div>
+          </div>
+  
+      </div>
+  
+  </div>
+  
+  <div class="slider-button">
+      <div class="button-left"><</div>
+      <div class="button-right">></div>
+  </div>
+  
+  </div>
+  </div>
+  
+  <script>
+      document.querySelector('.button-left').addEventListener('click', function(){
+          document.querySelector('.slider-top').style.transform = 'translate(50px)';
+      });
+      
+      document.querySelector('.button-right').addEventListener('click', function(){
+          document.querySelector('.slider-top').style.transform = 'translate(-200px)';
+      });
+      
+  </script>
+
+
+<!-- 본문 6(카드 2개) -->
+
+<div>
+  <div class="boxs-box3">
+      <div class="box-title-text4">
+          <div><b>카카오와 함께 자연보존에 나서기</b>
+          <img class="text-back-img4" style="width: 160px; height: 40px;" src="https://www.kakaocorp.com/page/activegreen/emph_txt.png" alt=""></div>
+          </div>
+  
+      <div class="box3-blocks">
+  
+          <div class="box3-block1">
+              <div class="box3-block1-img1"><img style="width: 110px;" src="https://www.kakaocorp.com/page/activegreen/img_nature_1_2.png" alt=""></div>
+              <div class="box3-block1-text">
+                  <div class="box3-block1-text1"><b>이용자의 작은<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 만 해도<br>모이면 작은 숲</b></div>
+                  
+              <div class="box3-block1-text2">                
+                  <div>친환경실천</div>
+                  <div style="margin-top: 5px;">음악 플레이</div>
+                  <div style="margin-top: 5px;">전자문서 청구</div>
+                  <div style="margin-top: 5px;">구매</div>
+              </div>
+  
+              </div>
+          <div class="box3-block1-b">+</div>
+          </div>
+  
+          <div class="box3-block2">
+              <div class="box3-block2-text">
+                  <div class="box3-block2-text1" style="font-size: 20pt;"><b>탄소 회복력의 척도,<br>생물다양성 지키기</b></div>
+                      
+              <div class="box3-block2-text2">                
+                  <div>해양생태계 보존</div>
+                  <div style="margin-top: 5px;">멸종위기종 보호</div>
+                  <div style="margin-top: 5px;">꿀벌 보호</div>
+                  <div style="margin-top: 5px;">산불피해지 복원</div>
+              </div>
+              
+              </div>
+              <div class="box3-block1-b">+</div>
+          </div>
+      </div>
+      
+  </div>
+  </div>
+
+  
+<!-- 본문 7 -->
+<div>
+  <div class="boxs-box4">
+      <div class="box-title-text5">
+          <div style="font-size: 25pt;"><b>카카오 안에서의 환경 경영노력</b>
+          <img class="text-back-img5" src="https://www.kakaocorp.com/page/activegreen/emph_txt.png" alt=""></div>
+      </div>
+          <div id="box4-text">카카오는 경영 전반에 걸쳐 환경 영향을 최소화하기 위한 활동을 지속하고,<br>
+              2040 넷 제로(Net Zero)를 목표로 노력하고 있습니다.</div>
+
+      <div class="box4-blocks">
+          <div class="box4-block1">
+              <div style="font-size: 17pt; padding-left: 20px;"><b>카카오의<br>환경경영 체계</b></div>
+              <div id="block1-button">
+                  <div style="font-size: 17pt; text-align: center; margin-top: 5px;">↗</div>
+              </div>
+          </div>
+          <div class="box4-block2">
+              <div style="font-size: 17pt; padding-left: 20px;"><b>카카오의 친환경<br>데이터센터 건립 계획</b></div>
+              <div id="block2-button">
+                  <div style="font-size: 17pt; text-align: center; margin-top: 5px;">↗</div>
+              </div>
+          </div>
+          <div class="box4-block3">
+              <div style="font-size: 17pt; padding-left: 20px;"><b>카카오 ESG 보고서<br>'카카오의 약속과 책임'</b></div>
+              <div id="block3-button">
+                  <div style="font-size: 17pt; text-align: center; margin-top: 5px;">↗</div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- 본문 8 -->
+
+<div class="boxs-box5-top">
+  <div class="boxs-box5">
+      <div class="box5-title"><b>데이터 기준</b></div>
+      <div class="box5-texts">
+          <div class="box5-text1">1) 1KUC(Kakao Users’ Carbon-reduction)를 온실가스 1kgCO2e 감축 기여 효과로 환산할 경우,<br>
+              국립산림과학원「주요 산림수종의 표준 탄소흡수량」중 소나무의 60년 누적 CO2 흡수량 평균치<br>
+              (그루 당 141.04 kgCO2e) 적용 ↑</div>
+  
+          <div class="box5-text2">2) 2022년 이용자가 직접 기부한 환경 기금 8억 3천만원, 이용자 참여•구매•결제•이용한 만큼 카카오가<br>
+              조성한 환경 기금 10억 4천만원 합산액 ↑</div>
+  
+          <div class="box5-text3">3) 카카오모빌리티 전기택시 이용자 수, 카카오페이 전자문서·전자 청구서 이용자 수는 제외하고 합산 ↑</div>
+  
+      </div>
+  </div>
+  </div>
+
+
+  <!-- up 버튼 -->
+<div >
+  <a href="#pageTop"><img  id="up-button" src="https://cdn-icons-png.flaticon.com/512/25/25366.png" alt=""></a>
+  </div>
+
+
+<!-- popup 창 코드 -->
+<div class="popUp-back">
+  <div class="popUp">
+      
+      <div class="popUpIn">
+          <div class="popUp-button">✕</div>
+          <div class="popUp-title"><b>도로 위 모든 수송 차량을<br>전기로 바꿀 수 있다면</b></div>
+          <div class="popUp-text1">전체 온실가스 배출량의 14%가 교통에서 발생합니다. 택시와 자가용으로 활용되는 승용차를 전기차로 바꾸는 것만으로도 환경에 크게 
+                                  기여할 수 있습니다. 특히 1대 당 주행거리가 많은 택시를 모두 전기차로 전환한다면, 모든 차량에서 발생하는 탄소배출량을 최대 10배까지 낮추는 효과가 있습니다.</div>
+
+          <div class="popUp-text2">카카오모빌리티는 전기 택시 구매지원 프로그램, 배터리 관리 서비스 등을 통해 가맹 전기 택시 규모를 지속
+                                  해서 늘리고 있으며, 2023년 말까지 누적 1만 대 이상이 될 것으로 예상합니다.</div>
+
+          <div class="popUp-bottom-texts">
+              <div class="popUp-bottom-text1">
+                  <div class="bottom-text1-title"><b>1억 2천km</b></div>
+                  <div class="bottom-text1-explain">카카오T 블루(가맹) 전기 택시<br>
+                      2022년 총 주행거리<br>
+                      LPG 택시 대비 탄소배출량 40% 절감 효과</div>
+              </div>
+              <div class="popUp-bottom-text2">
+                  <div class="bottom-text2-title"><b>2억 2천km</b></div>
+                  <div class="bottom-text1-explain">카카오내비 전기차 이용자<br>
+                      2022년 총 주행거리<br>
+                      내연기관 차량 대비 탄소배출량 50% 절감 효과</div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+<script>
+  let popup = document.getElementsByClassName('popUp-back');
+  let b1 = document.getElementsByClassName('b1');
+  let closeBtn = document.getElementsByClassName('popUp-button');
+  
+  b1[0].addEventListener("click", function(){
+      popup[0].style.display = "flex";
+  });
+  closeBtn[0].addEventListener("click",function () {
+      popup[0].style.display = "none";
+      
+  });
+</script>
+
+
+
+</div>
+<!-- 본문 내용 감싸는 div -->
+</div>
+<!-- 전체 감싸는 div -->
+
+
+
+
+
+        
+        </div>
+      </main>
+    </div>
+    <!-- 컨테이너 END -->
+  </body>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-1">
+      <span
+        ><li class="yellow_icon">
+          소개
+          <ul>
+            <li>카카오문화</li>
+            <li>공동체</li>
+            <li>연혁</li>
+          </ul>
+        </li>
+      </span>
+      <span
+        ><li class="yellow_icon">
+          이야기
+          <ul>
+            <li>콘텐츠 저장소</li>
+            <li>뚝딱뚝딱 성장기</li>
+            <li>숫자로 보는 카카오</li>
+          </ul>
+        </li>
+      </span>
+      <span><li class="yellow_icon">뉴스</li> </span>
+      <span
+        ><li class="yellow_icon">
+          기술과 서비스
+          <ul>
+            <li>기술</li>
+            <li>서비스</li>
+          </ul>
+        </li>
+      </span>
+      <span
+        ><li class="yellow_icon">
+          약속과 책임
+          <ul>
+            <li>카카오의 다짐</li>
+            <li>ESG</li>
+            <li>액티브그린</li>
+            <li>단골 만들기 챌린지</li>
+            <li>디지털 권리</li>
+            <li>AI 윤리</li>
+          </ul>
+        </li>
+      </span>
+      <span
+        ><li class="yellow_icon">
+          투자정보
+          <ul>
+            <li>기업지배구조</li>
+            <li>주가정보</li>
+            <li>재무정보</li>
+            <li>IR행사</li>
+            <li>공시정보</li>
+            <li>공고</li>
+          </ul>
+        </li>
+      </span>
+      <span
+        ><li class="yellow_icon">
+          고객센터
+          <ul>
+            <li>카카오 고객센터 ↗</li>
+            <li>Daum 고객센터 ↗</li>
+            <li>커머스 고객센터 ↗</li>
+            <li>&nbsp;</li>
+            <span class="bold_li"><li>인재영입 ↗</li></span>
+            <li>&nbsp;</li>
+            <span class="bold_li"><li>카카오계정 ↗</li></span>
+          </ul>
+        </li>
+      </span>
+    </div>
+    <div class="footer-2">
+      <div class="footer-2-menu">
+        <span id="clickMenu" onclick="clickshow(this)"
+          >이용약관
+          <span>∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>카카오계정 서비스 ↗</li>
+              <li>카카오 서비스 ↗</li>
+              <li>Daum 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu" onclick="clickshow(this)"
+          >위치정보 이용약관 <span>∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>카카오 서비스 ↗</li>
+              <li>Daum 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu" onclick="clickshow(this)"
+          >개인정보처리방침 <span>∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>기업사이트</li>
+              <li>카카오 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu">운영정책</span>
+
+        <span id="clickMenu" onclick="clickshow(this)"
+          >청소년보호정책 <span>∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>카카오 서비스 ↗</li>
+              <li>Daum 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu">브랜드보호정책</span>
+
+        <span id="clickMenu">권리침해신고안내</span>
+
+        <span id="clickMenu" onclick="clickshow(this)"
+          >공지사항<span id="angle_bracket5">∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>투자정보 공지</li>
+              <li>카카오 서비스 ↗</li>
+              <li>Daum 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu">사이버윤리실</span>
+
+        <span id="clickMenu">Contact Us</span>
+      </div>
+      <span class="copyright">© Kakao Corp. All rights reserved.</span>
+      <div class="relatedSites">
+        <span
+          id="relatedSites"
+          onclick="relatedShow(this,'relatedSites-sub','relatedSites-btn')"
+          >관련사이트<span id="relatedSites-btn">+</span>
+          <div class="relatedSites-sub" id="relatedSites-sub">
+            <ul>
+              <li>카카오 AI ↗</li>
+              <li>카카오 프라이버시 ↗</li>
+              <li>카카오 디벨로퍼스 ↗</li>
+              <li>다음 포털 사이트 ↗</li>
+              <li>동반 성장 사이트 ↗</li>
+              <li>제주 with kakao ↗</li>
+            </ul>
+          </div>
+        </span>
+      </div>
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>히스토리 | 카카오</title>
+    <link
+      data-n-head="ssr"
+      rel="icon"
+      type="image/x-icon"
+      href="./img/favicon.ico"
+    />
+    <link rel="stylesheet" href="./css/kstyle.css" />
+    <link rel="stylesheet" href="./css/kdduk.css" />
+    <link rel="stylesheet" href="kmain_boxStyle.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/kmain.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".menu>a").click(function (e) {
+          $(".menu>a").each(function () {
+            $(this).next("ul").addClass("hide");
+            console.log($(this));
+          });
+          console.log(e);
+          $(e.target).next("ul").removeClass("hide");
+        });
+      });
+      function nightmode() {
+        if (document.querySelector(".nightmode").value === "night") {
+          document.querySelector("body").style.backgroundColor = "black";
+          document.querySelector("body").style.color = "white";
+          document.querySelector("#night_day").value = "day";
+        } else {
+          document.querySelector("body").style.backgroundColor = "white";
+          document.querySelector("body").style.color = "black";
+          document.querySelector("#night_day").value = "night";
+        }
+      }
+      // 슬릭 슬라이더 코드
+      $(document).ready(function () {
+        $(".slide_test").slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          arrows: false,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 헤더 -->
+      <header class="main_header">
+        <!-- 메인 헤더 -->
+        <div class="header">
+          <!-- 카카오로고 -->
+          <div class="logo"><a href="../kms/kmain.html">kakao</a></div>
+          <!-- 네비 -->
+          <div class="navigation">
+            <ul>
+              <!-- 소개 -->
+              <li class="intro menu" onclick="showHeader(this)">
+                <a>소개</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="intro-btn">
+                    <a href="">카카오 문화</a>
+                    <a href="">공동체</a>
+                    <a href="">연혁</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- 이야기 -->
+              <li class="story menu" onclick="showHeader(this)">
+                <a>이야기</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="story-btn">
+                    <a href="">콘텐츠저장소</a>
+                    <a href="kdduk_final.html">뚝딱뚝딱성장기</a>
+                    <a href="">숫자로보는카카오</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- 뉴스 -->
+              <li class="news menu"><a class="news-btn" href="">뉴스</a></li>
+              <!-- 기술과 서비스 -->
+              <li class="tech menu" onclick="showHeader(this)">
+                <a>기술과서비스</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="tech-btn">
+                    <a href="">기술</a>
+                    <a href="">서비스</a>
+                  </li>
+                </ul>
+              </li>
+              <!--  약속과 책임 -->
+              <li class="promise menu" onclick="showHeader(this)">
+                <a>약속과책임</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="promise-btn">
+                    <a href="">카카오의 다짐</a>
+                    <a href="../ljh/esg.html">ESG</a>
+                    <a href="../csb/activeGreen.html">액티브그린</a>
+                    <a href="../bys/dangolchallenge.html">단골만들기챌린지</a>
+                    <a href="../csb/digitalRights.html">디지털권리</a>
+                    <a href="">AI윤리</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 상단 버튼 -->
+          <div class="util-btn">
+            <button class="search btn">
+              <img src="./img/search.png" alt="검색버튼" />
+            </button>
+            <button class="language btn">
+              <img src="./img/language.png" alt="언어변경버튼" />
+            </button>
+            <button class="nightmode btn" value="night" onclick="nightmode()">
+              <img src="./img/night_mode.png" alt="야간모드버튼" />
+            </button>
+          </div>
+        </div>
+        <!-- 서브 헤더 -->
+        <div class="sub-header">
+          <img
+            class="sub-header-icon"
+            src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562b710017800001.png?type=thumb&opt=C72x72.fwebp"
+            alt=""
+          />
+          <span class="sub-header-txt">뚝딱뚝딱 성장기</span>
+        </div>
+      </header>
+      <!-- 메인내용 -->
+      <main>
+        <div class="main">
+          <!-- 타이틀 -->
+          <div class="tit_main">
+            <div>
+              <div>
+                <img
+                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562b710017800001.png?type=thumb&opt=C72x72.fwebp"
+                  width="50px"
+                />
+                <span class="txt_tit">뚝딱뚝딱 성장기</span>
+              </div>
+              <span class="txt_tit2">더 나은 세상을 만드는 카카오</span>
+            </div>
+          </div>
+          <!-- 슬라이드 -->
+          <div class="slide_test">
+            <div class="slick_track">
+              <div class="item_card">
+                <div class="item_card_tit">
+                  <div style="display: flex">
+                    <img
+                      src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562b710017800001.png?type=thumb&opt=C72x72.fwebp"
+                      width="36px"
+                      height="36px"
+                    />
+
+                    <span class="info_cate">뚝딱뚝딱 성장기</span>
+                  </div>
+                  <div class="item_card_btn">
+                    <button type="button" class="btn_share">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpd8tYFa-kHeF7n6_--N9L768VOhuDF9hqJg&usqp=CAU"
+                        alt=""
+                        width="35px"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <a href="" class="link_item">
+                  <div class="item_card_mid">
+                    <strong>상상하고 명령하세요. AI가 표현해드립니다.</strong>
+                  </div>
+                  <div class="item_card_tag">#KOGPT #인공지능작가</div>
+                  <div>
+                    <img
+                      class="thumb_img"
+                      src="https://t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Fhistory%2Fbeba435d018500001.png"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="slick_track">
+              <div class="item_card">
+                <div class="item_card_tit">
+                  <div style="display: flex">
+                    <img
+                      src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562b710017800001.png?type=thumb&opt=C72x72.fwebp"
+                      width="36px"
+                      height="36px"
+                    />
+
+                    <span class="info_cate">뚝딱뚝딱 성장기</span>
+                  </div>
+                  <div class="item_card_btn">
+                    <button type="button" class="btn_share">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpd8tYFa-kHeF7n6_--N9L768VOhuDF9hqJg&usqp=CAU"
+                        alt=""
+                        width="35px"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <a href="" class="link_item">
+                  <div class="item_card_mid">
+                    <strong>카카오의 벤처 투자 10년사</strong>
+                  </div>
+                  <div class="item_card_tag">#스타트업 #씨드투자 #초기투자</div>
+                  <div>
+                    <img
+                      class="thumb_img"
+                      src="https://t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Fhistory%2F0e1ca5b1018500001.png"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="slick_track">
+              <div class="item_card">
+                <div class="item_card_tit">
+                  <div style="display: flex">
+                    <img
+                      src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562b710017800001.png?type=thumb&opt=C72x72.fwebp"
+                      width="36px"
+                      height="36px"
+                    />
+
+                    <span class="info_cate">뚝딱뚝딱 성장기</span>
+                  </div>
+                  <div class="item_card_btn">
+                    <button type="button" class="btn_share">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpd8tYFa-kHeF7n6_--N9L768VOhuDF9hqJg&usqp=CAU"
+                        alt=""
+                        width="35px"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <a href="" class="link_item">
+                  <div class="item_card_mid">
+                    <strong
+                      >위협이 발생할 곳에 미리 방어벽을 구축하는 사람들</strong
+                    >
+                  </div>
+                  <div class="item_card_tag">#리버스엔지니어링 #세이프봇</div>
+                  <div>
+                    <img
+                      class="thumb_img"
+                      src="https://t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Fhistory%2F0e0deb07018500001.png"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="slick_track">
+              <div class="item_card">
+                <div class="item_card_tit">
+                  <div style="display: flex">
+                    <img
+                      src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562b710017800001.png?type=thumb&opt=C72x72.fwebp"
+                      width="36px"
+                      height="36px"
+                    />
+
+                    <span class="info_cate">뚝딱뚝딱 성장기</span>
+                  </div>
+                  <div class="item_card_btn">
+                    <button type="button" class="btn_share">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpd8tYFa-kHeF7n6_--N9L768VOhuDF9hqJg&usqp=CAU"
+                        alt=""
+                        width="35px"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <a href="" class="link_item">
+                  <div class="item_card_mid">
+                    <strong>지갑 없는 세상의 시작점, 카카오톡 지갑</strong>
+                  </div>
+                  <div class="item_card_tag">#디지털 자격증 #카카오 인증서</div>
+                  <div>
+                    <img
+                      class="thumb_img"
+                      src="https://t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Fhistory%2F3247712c017e00001.jpg"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="slick_track">
+              <div class="item_card">
+                <div class="item_card_tit">
+                  <div style="display: flex">
+                    <img
+                      src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562b710017800001.png?type=thumb&opt=C72x72.fwebp"
+                      width="36px"
+                      height="36px"
+                    />
+
+                    <span class="info_cate">뚝딱뚝딱 성장기</span>
+                  </div>
+                  <div class="item_card_btn">
+                    <button type="button" class="btn_share">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpd8tYFa-kHeF7n6_--N9L768VOhuDF9hqJg&usqp=CAU"
+                        alt=""
+                        width="35px"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <a href="" class="link_item">
+                  <div class="item_card_mid">
+                    <strong>공동체를 향해 열어 젖힌 노하우 놀이터</strong>
+                  </div>
+                  <div class="item_card_tag">#if kakao #이프카카오</div>
+                  <div>
+                    <img
+                      class="thumb_img"
+                      src="https://t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Fhistory%2F22660caa017d00001.jpg"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 히스토리 -->
+          <div class="history">
+            <div class="history_tit">
+              <span>연도별 히스토리</span>
+
+              <select class="history_select" name="year">
+                <option value="">모든 연도</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+              </select>
+            </div>
+
+            <ul class="history_ul">
+              <li class="history_list">
+                <a href="" class="history_link">
+                  <div class="history_card">
+                    <span class="history_thumb">
+                      <img
+                        class="history_thumb_img"
+                        src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/beba435d018500001.png?type=thumb&opt=C480x360.fwebp"
+                        alt=""
+                      />
+                    </span>
+                    <div class="history_cont">
+                      <span class="history_date">2023년 01월</span>
+                      <strong class="history_mid"
+                        >상상하고 명령하세요.AI가 표현해드립니다.</strong
+                      >
+                      <span class="history_tag"
+                        >#KOGPT #인공지능작가 #카카오브레인</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="history_list">
+                <a href="" class="history_link">
+                  <div class="history_card">
+                    <span class="history_thumb">
+                      <img
+                        class="history_thumb_img"
+                        src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/0e1ca5b1018500001.png?type=thumb&opt=C480x360.fwebp"
+                        alt=""
+                      />
+                    </span>
+                    <div class="history_cont">
+                      <span class="history_date">2022년 12월</span>
+                      <strong class="history_mid"
+                        >카카오의 벤처 투자 10년차
+                      </strong>
+                      <span class="history_tag"
+                        >#스타트업 #씨드투자 #초기투자 #벤처캐피탈</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="history_list">
+                <a href="" class="history_link">
+                  <div class="history_card">
+                    <span class="history_thumb">
+                      <img
+                        class="history_thumb_img"
+                        src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/21c43c50017900001.png?type=thumb&opt=C480x360.fwebp"
+                        alt=""
+                      />
+                    </span>
+                    <div class="history_cont">
+                      <span class="history_date">2020년 11월</span>
+                      <strong class="history_mid"
+                        >카카오 캐릭터 IP에 관한 자세한 이야기들</strong
+                      >
+                      <span class="history_tag"
+                        >#니니즈 #춘식이 #카카오프렌즈</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="history_list">
+                <a href="" class="history_link">
+                  <div class="history_card">
+                    <span class="history_thumb">
+                      <img
+                        class="history_thumb_img"
+                        src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/41f0c3c0017a00001.png?type=thumb&opt=C480x360.fwebp"
+                        alt=""
+                      />
+                    </span>
+                    <div class="history_cont">
+                      <span class="history_date">2017년 01월</span>
+                      <strong class="history_mid"
+                        >인공지능 기술이 함께한다면 세상은 어떻게
+                        변할까?</strong
+                      >
+                      <span class="history_tag"
+                        >#Kakao enterprise #Kakao AI #KaKao i</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="history_list">
+                <a href="" class="history_link">
+                  <div class="history_card">
+                    <span class="history_thumb">
+                      <img
+                        class="history_thumb_img"
+                        src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/history/300b85ed017900001.png?type=thumb&opt=C480x360.fwebp"
+                        alt=""
+                      />
+                    </span>
+                    <div class="history_cont">
+                      <span class="history_date">2016년 04월</span>
+                      <strong class="history_mid"
+                        >후발 주자, 만화의 나라에서 이정표를 세우다</strong
+                      >
+                      <span class="history_tag"
+                        >#웹툰 #카카오픽코마 #픽코마</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <button class="history_btn">더 보기</button>
+            <a href="" class="history_top_btn">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOi5_pe-f9fggdVB04zxuedHNOrDEB92Ac3dGSApl_22sFkwreWGcjfa7XLC-SfpXOrWE&usqp=CAU"
+                alt=""
+                width="50px"
+              />
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- 컨테이너 END -->
+    <!-- footer -->
+    <footer>
+      <div class="footer-1">
+        <span
+          ><li class="yellow_icon">
+            소개
+            <ul>
+              <li>카카오문화</li>
+              <li>공동체</li>
+              <li>연혁</li>
+            </ul>
+          </li>
+        </span>
+        <span
+          ><li class="yellow_icon">
+            이야기
+            <ul>
+              <li>콘텐츠 저장소</li>
+              <li>뚝딱뚝딱 성장기</li>
+              <li>숫자로 보는 카카오</li>
+            </ul>
+          </li>
+        </span>
+        <span><li class="yellow_icon">뉴스</li> </span>
+        <span
+          ><li class="yellow_icon">
+            기술과 서비스
+            <ul>
+              <li>기술</li>
+              <li>서비스</li>
+            </ul>
+          </li>
+        </span>
+        <span
+          ><li class="yellow_icon">
+            약속과 책임
+            <ul>
+              <li>카카오의 다짐</li>
+              <li>ESG</li>
+              <li>액티브그린</li>
+              <li>단골 만들기 챌린지</li>
+              <li>디지털 권리</li>
+              <li>AI 윤리</li>
+            </ul>
+          </li>
+        </span>
+        <span
+          ><li class="yellow_icon">
+            투자정보
+            <ul>
+              <li>기업지배구조</li>
+              <li>주가정보</li>
+              <li>재무정보</li>
+              <li>IR행사</li>
+              <li>공시정보</li>
+              <li>공고</li>
+            </ul>
+          </li>
+        </span>
+        <span
+          ><li class="yellow_icon">
+            고객센터
+            <ul>
+              <li>카카오 고객센터 ↗</li>
+              <li>Daum 고객센터 ↗</li>
+              <li>커머스 고객센터 ↗</li>
+              <li>&nbsp;</li>
+              <span class="bold_li"><li>인재영입 ↗</li></span>
+              <li>&nbsp;</li>
+              <span class="bold_li"><li>카카오계정 ↗</li></span>
+            </ul>
+          </li>
+        </span>
+      </div>
+      <div class="footer-2">
+        <div class="footer-2-menu">
+          <span id="clickMenu" onclick="clickshow(this)"
+            >이용약관
+            <span>∨</span>
+            <div class="footerSubmenu">
+              <ul>
+                <li>카카오계정 서비스 ↗</li>
+                <li>카카오 서비스 ↗</li>
+                <li>Daum 서비스 ↗</li>
+              </ul>
+            </div>
+          </span>
+
+          <span id="clickMenu" onclick="clickshow(this)"
+            >위치정보 이용약관 <span>∨</span>
+            <div class="footerSubmenu">
+              <ul>
+                <li>카카오 서비스 ↗</li>
+                <li>Daum 서비스 ↗</li>
+              </ul>
+            </div>
+          </span>
+
+          <span id="clickMenu" onclick="clickshow(this)"
+            >개인정보처리방침 <span>∨</span>
+            <div class="footerSubmenu">
+              <ul>
+                <li>기업사이트</li>
+                <li>카카오 서비스 ↗</li>
+              </ul>
+            </div>
+          </span>
+
+          <span id="clickMenu">운영정책</span>
+
+          <span id="clickMenu" onclick="clickshow(this)"
+            >청소년보호정책 <span>∨</span>
+            <div class="footerSubmenu">
+              <ul>
+                <li>카카오 서비스 ↗</li>
+                <li>Daum 서비스 ↗</li>
+              </ul>
+            </div>
+          </span>
+
+          <span id="clickMenu">브랜드보호정책</span>
+
+          <span id="clickMenu">권리침해신고안내</span>
+
+          <span id="clickMenu" onclick="clickshow(this)"
+            >공지사항<span id="angle_bracket5">∨</span>
+            <div class="footerSubmenu">
+              <ul>
+                <li>투자정보 공지</li>
+                <li>카카오 서비스 ↗</li>
+                <li>Daum 서비스 ↗</li>
+              </ul>
+            </div>
+          </span>
+
+          <span id="clickMenu">사이버윤리실</span>
+
+          <span id="clickMenu">Contact Us</span>
+        </div>
+        <span class="copyright">© Kakao Corp. All rights reserved.</span>
+        <div class="relatedSites">
+          <span
+            id="relatedSites"
+            onclick="relatedShow(this,'relatedSites-sub','relatedSites-btn')"
+            >관련사이트<span id="relatedSites-btn">+</span>
+            <div class="relatedSites-sub" id="relatedSites-sub">
+              <ul>
+                <li>카카오 AI ↗</li>
+                <li>카카오 프라이버시 ↗</li>
+                <li>카카오 디벨로퍼스 ↗</li>
+                <li>다음 포털 사이트 ↗</li>
+                <li>동반 성장 사이트 ↗</li>
+                <li>제주 with kakao ↗</li>
+              </ul>
+            </div>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+.future {
+  top: 100px;
+  position: relative;
+  width: 1300px;
+  height: 800px;
+  margin: auto;
+  background-color: rgb(150, 209, 248);
+  border-radius: 10px;
+}
+
+.text1 {
+  position: relative;
+  top: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 22pt;
+  z-index: 3;
+  letter-spacing: -2pt;
+}
+
+.video {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  z-index: 1;
+  height: 700px;
+}
+
+.text2 {
+  position: relative;
+  top: -550px;
+  font-size: 13pt;
+  text-align: center;
+  z-index: 4;
+  letter-spacing: -2pt;
+}
+
+.textbox {
+  position: relative;
+  top: -500px;
+  z-index: 3;
+  justify-content: center;
+}
+
+.text3 {
+  display: flex;
+  position: relative;
+  z-index: 4;
+  justify-content: center;
+  top: -535px;
+  font-size: 11pt;
+  gap: 50px;
+}
+
+.text4 {
+  position: relative;
+  margin-left: 230px;
+  top: 25px;
+  z-index: 3;
+  font-size: 11pt;
+  letter-spacing: -0.8pt;
+}
+
+.text5 {
+  display: flex;
+  position: relative;
+  margin-left: 230px;
+  top: 25px;
+  z-index: 3;
+  font-size: 11pt;
+  letter-spacing: -0.8pt;
+}
+
+.video2 {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.textbox2 {
+  display: flex;
+  position: relative;
+  top: 200px;
+  z-index: 4;
+  justify-content: center;
+  gap: 5px;
+}
+
+.text6 {
+  display: flex;
+  position: relative;
+  top: 165px;
+  left: 50px;
+  z-index: 4;
+  color: white;
+}
+
+.textbox3 {
+  position: relative;
+  top: 70px;
+}
+
+.newsBox1 {
+  width: 450px;
+  height: 500px;
+  box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.09);
+  border-radius: 16px;
+}
+
+.newsBox1:hover {
+  box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18);
+  transform: translateY(-8px);
+  transition: 0.5s;
+}
+
+.newsBox2 {
+  width: 450px;
+  height: 500px;
+  box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.09);
+  border-radius: 16px;
+}
+
+.newsBox2:hover {
+  box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18);
+  transform: translateY(-8px);
+  transition: 0.5s;
+}
+
+.newsBox3 {
+  width: 450px;
+  height: 500px;
+  box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.09);
+  border-radius: 16px;
+}
+
+.newsBox3:hover {
+  box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.18);
+  transform: translateY(-8px);
+  transition: 0.5s;
+}

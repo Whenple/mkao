@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디지털권리 | 카카오</title>
+    <link
+      data-n-head="ssr"
+      rel="icon"
+      type="image/x-icon"
+      href="./img/favicon.ico"
+    />
+    <link rel="stylesheet" href="./css/kstyle.css" />
+    <link rel="stylesheet" href="kmain_boxStyle.css" />
+    <link rel="stylesheet" href="./css/digitalrights.css" />
+    i
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/kmain.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 헤더 -->
+      <header class="main_header">
+        <!-- 메인 헤더 -->
+        <div class="header">
+          <!-- 카카오로고 -->
+          <div class="logo"><a href="../kms/kmain.html">kakao</a></div>
+          <!-- 네비 -->
+          <div class="navigation">
+            <ul>
+              <!-- 소개 -->
+              <li class="intro menu" onclick="showHeader(this)">
+                <a>소개</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="intro-btn">
+                    <a href="">카카오 문화</a>
+                    <a href="">공동체</a>
+                    <a href="">연혁</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- 이야기 -->
+              <li class="story menu" onclick="showHeader(this)">
+                <a>이야기</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="story-btn">
+                    <a href="">콘텐츠저장소</a>
+                    <a href="../lgr/kdduk_final.html">뚝딱뚝딱성장기</a>
+                    <a href="">숫자로보는카카오</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- 뉴스 -->
+              <li class="news menu"><a class="news-btn" href="">뉴스</a></li>
+              <!-- 기술과 서비스 -->
+              <li class="tech menu" onclick="showHeader(this)">
+                <a>기술과서비스</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="tech-btn">
+                    <a href="">기술</a>
+                    <a href="">서비스</a>
+                  </li>
+                </ul>
+              </li>
+              <!--  약속과 책임 -->
+              <li class="promise menu" onclick="showHeader(this)">
+                <a>약속과책임</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="promise-btn">
+                    <a href="">카카오의 다짐</a>
+                    <a href="../ljh/esg.html">ESG</a>
+                    <a href="activeGreen.html">액티브그린</a>
+                    <a href="../bys/dangolchallenge.html">단골만들기챌린지</a>
+                    <a href="digitalRights.html">디지털권리</a>
+                    <a href="">AI윤리</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 상단 버튼 -->
+          <div class="util-btn">
+            <button class="search btn">
+              <img src="./img/search.png" alt="검색버튼" />
+            </button>
+            <button class="language btn">
+              <img src="./img/language.png" alt="언어변경버튼" />
+            </button>
+            <button class="nightmode btn" value="night" onclick="nightmode()">
+              <img src="./img/night_mode.png" alt="야간모드버튼" />
+            </button>
+          </div>
+        </div>
+        <!-- 서브 헤더 -->
+        <div class="sub-header">
+          <img
+            class="sub-header-icon"
+            src="./img/디지털권리 아이콘.png"
+            alt=""
+          />
+          <span class="sub-header-txt">디지털권리</span>
+        </div>
+      </header>
+      <!-- 메인내용 -->
+      <main>
+        <!-- 디지털권리 코드 -->
+
+        <!-- 디지털 권리 로고 -->
+
+        <div class="wrapper">
+          <div class="top">
+            <div>
+              <div class="top-title">
+                <div id="logo-img">
+                  <img
+                    style="width: 75px"
+                    src="https://www.kakaocorp.com/page/ico_tit_digital.gif"
+                    alt=""
+                  />
+                </div>
+                <div id="logo-text" style="line-height: -30px">
+                  <b>디지털 권리</b>
+                </div>
+              </div>
+              <div class="top-text" style="font-size: 23pt">
+                카카오는 이용자의 디지털 권리를 최우선으로 존중합니다.
+              </div>
+            </div>
+          </div>
+
+          <!-- 본문 내용 -->
+
+          <!-- 컨테이너 1 -->
+
+          <div class="top-container">
+            <div class="containers container1">
+              <div class="contents content1">
+                <div class="tbls tbl1">
+                  <div>
+                    <div class="titles title1">카카오 이용자 보호 현황</div>
+                    <div class="texts text1">
+                      <b
+                        >이용자의 권리보호는<br />
+                        카카오가 가장 중요하게<br />
+                        생각하는 가치입니다.</b
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contents content2">
+                <div class="tbls tbl2">
+                  <div>
+                    <div class="titles title2">
+                      증오발언 근절을 위한 카카오의 원칙
+                    </div>
+                    <div class="texts text2">
+                      <b
+                        >누구나 안전하고 자유롭게<br />
+                        소통할 수 있도록<br />
+                        카카오는 증오발언에 적극적으로 대응합니다.</b
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contents content3">
+                <div class="tbls tbl3">
+                  <div>
+                    <div class="titles title3">Digital for kids</div>
+                    <div class="texts text3">
+                      <b
+                        >아동청소년이 건강하게<br />
+                        배우고 성장할 수 있는<br />
+                        디지털 환경을 만듭니다.</b
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contents content4">
+                <div class="tbls tbl4">
+                  <div>
+                    <div class="titles title4">모두를 위한 카톡 안녕가이드</div>
+                    <div class="texts text4">
+                      <b
+                        >모두 안녕할 수 있도록,<br />
+                        오늘도 더 안전한<br />
+                        카카오톡을 만들어갑니다.</b
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- 컨테이너 END -->
+  </body>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-1">
+      <span
+        ><li class="yellow_icon">
+          소개
+          <ul>
+            <li>카카오문화</li>
+            <li>공동체</li>
+            <li>연혁</li>
+          </ul>
+        </li>
+      </span>
+      <span
+        ><li class="yellow_icon">
+          이야기
+          <ul>
+            <li>콘텐츠 저장소</li>
+            <li>뚝딱뚝딱 성장기</li>
+            <li>숫자로 보는 카카오</li>
+          </ul>
+        </li>
+      </span>
+      <span><li class="yellow_icon">뉴스</li> </span>
+      <span
+        ><li class="yellow_icon">
+          기술과 서비스
+          <ul>
+            <li>기술</li>
+            <li>서비스</li>
+          </ul>
+        </li>
+      </span>
+      <span
+        ><li class="yellow_icon">
+          약속과 책임
+          <ul>
+            <li>카카오의 다짐</li>
+            <li>ESG</li>
+            <li>액티브그린</li>
+            <li>단골 만들기 챌린지</li>
+            <li>디지털 권리</li>
+            <li>AI 윤리</li>
+          </ul>
+        </li>
+      </span>
+      <span
+        ><li class="yellow_icon">
+          투자정보
+          <ul>
+            <li>기업지배구조</li>
+            <li>주가정보</li>
+            <li>재무정보</li>
+            <li>IR행사</li>
+            <li>공시정보</li>
+            <li>공고</li>
+          </ul>
+        </li>
+      </span>
+      <span
+        ><li class="yellow_icon">
+          고객센터
+          <ul>
+            <li>카카오 고객센터 ↗</li>
+            <li>Daum 고객센터 ↗</li>
+            <li>커머스 고객센터 ↗</li>
+            <li>&nbsp;</li>
+            <span class="bold_li"><li>인재영입 ↗</li></span>
+            <li>&nbsp;</li>
+            <span class="bold_li"><li>카카오계정 ↗</li></span>
+          </ul>
+        </li>
+      </span>
+    </div>
+    <div class="footer-2">
+      <div class="footer-2-menu">
+        <span id="clickMenu" onclick="clickshow(this)"
+          >이용약관
+          <span>∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>카카오계정 서비스 ↗</li>
+              <li>카카오 서비스 ↗</li>
+              <li>Daum 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu" onclick="clickshow(this)"
+          >위치정보 이용약관 <span>∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>카카오 서비스 ↗</li>
+              <li>Daum 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu" onclick="clickshow(this)"
+          >개인정보처리방침 <span>∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>기업사이트</li>
+              <li>카카오 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu">운영정책</span>
+
+        <span id="clickMenu" onclick="clickshow(this)"
+          >청소년보호정책 <span>∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>카카오 서비스 ↗</li>
+              <li>Daum 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu">브랜드보호정책</span>
+
+        <span id="clickMenu">권리침해신고안내</span>
+
+        <span id="clickMenu" onclick="clickshow(this)"
+          >공지사항<span id="angle_bracket5">∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>투자정보 공지</li>
+              <li>카카오 서비스 ↗</li>
+              <li>Daum 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu">사이버윤리실</span>
+
+        <span id="clickMenu">Contact Us</span>
+      </div>
+      <span class="copyright">© Kakao Corp. All rights reserved.</span>
+      <div class="relatedSites">
+        <span
+          id="relatedSites"
+          onclick="relatedShow(this,'relatedSites-sub','relatedSites-btn')"
+          >관련사이트<span id="relatedSites-btn">+</span>
+          <div class="relatedSites-sub" id="relatedSites-sub">
+            <ul>
+              <li>카카오 AI ↗</li>
+              <li>카카오 프라이버시 ↗</li>
+              <li>카카오 디벨로퍼스 ↗</li>
+              <li>다음 포털 사이트 ↗</li>
+              <li>동반 성장 사이트 ↗</li>
+              <li>제주 with kakao ↗</li>
+            </ul>
+          </div>
+        </span>
+      </div>
+    </div>
+  </footer>
+</html>

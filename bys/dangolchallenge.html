@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>카카오 단골 만들기 챌린지ㅣ카카오</title>
+    <link
+      data-n-head="ssr"
+      rel="icon"
+      type="image/x-icon"
+      href="./img/favicon.ico"
+    />
+    <link rel="stylesheet" href="./css/kstyle.css" />
+    <link rel="stylesheet" href="./css/dangolchallenge.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/kmain.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".single-item").slick();
+      });
+      function nightmode() {
+        if (document.querySelector(".nightmode").value === "night") {
+          document.querySelector("body").style.backgroundColor = "black";
+          document.querySelector("body").style.color = "white";
+          document.querySelector("#night_day").value = "day";
+        } else {
+          document.querySelector("body").style.backgroundColor = "white";
+          document.querySelector("body").style.color = "black";
+          document.querySelector("#night_day").value = "night";
+        }
+      }
+      $(document).ready(function ($) {
+        $(".scroll_move").click(function (event) {
+          console.log(".scroll_move");
+          event.preventDefault();
+          $("html,body").animate({ scrollTop: $(this.hash).offset().top }, 500);
+        });
+      });
+    </script>
+    <!-- 슬라이더 -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(function () {
+        $(".slider").slick({
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 헤더 -->
+      <header class="main_header">
+        <!-- 메인 헤더 -->
+        <div class="header">
+          <!-- 카카오로고 -->
+          <div class="logo"><a href="../kms/kmain.html">kakao</a></div>
+          <!-- 네비 -->
+          <div class="navigation">
+            <ul>
+              <!-- 소개 -->
+              <li class="intro menu" onclick="showHeader(this)">
+                <a>소개</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="intro-btn">
+                    <a href="">카카오 문화</a>
+                    <a href="">공동체</a>
+                    <a href="">연혁</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- 이야기 -->
+              <li class="story menu" onclick="showHeader(this)">
+                <a>이야기</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="story-btn">
+                    <a href="">콘텐츠저장소</a>
+                    <a href="../lgr/kdduk_final.html">뚝딱뚝딱성장기</a>
+                    <a href="">숫자로보는카카오</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- 뉴스 -->
+              <li class="news menu"><a class="news-btn" href="">뉴스</a></li>
+              <!-- 기술과 서비스 -->
+              <li class="tech menu" onclick="showHeader(this)">
+                <a>기술과서비스</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="tech-btn">
+                    <a href="">기술</a>
+                    <a href="">서비스</a>
+                  </li>
+                </ul>
+              </li>
+              <!--  약속과 책임 -->
+              <li class="promise menu" onclick="showHeader(this)">
+                <a>약속과책임</a>
+                <ul class="hide">
+                  <li class="hide-btn" id="promise-btn">
+                    <a href="">카카오의 다짐</a>
+                    <a href="../ljh/esg.html">ESG</a>
+                    <a href="../csb/activeGreen.html">액티브그린</a>
+                    <a href="dangolchallenge.html">단골만들기챌린지</a>
+                    <a href="../csb/digitalRights.html">디지털권리</a>
+                    <a href="">AI윤리</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 상단 버튼 -->
+          <div class="util-btn">
+            <button class="search btn">
+              <img src="./img/search.png" alt="검색버튼" />
+            </button>
+            <button class="language btn">
+              <img src="./img/language.png" alt="언어변경버튼" />
+            </button>
+            <button class="nightmode btn" value="night" onclick="nightmode()">
+              <img src="./img/night_mode.png" alt="야간모드버튼" />
+            </button>
+          </div>
+        </div>
+        <!-- 서브 헤더 -->
+        <div class="sub-header">
+          <div class="sub-header-tit">
+            <img
+              class="sub-header-icon"
+              src="./img/aaef9c6d018a00001.png"
+              alt=""
+            />
+            <span class="sub-header-txt">카카오 단골 만들기 챌린지</span>
+          </div>
+          <div>
+            <ul class="move_list">
+              <li><a href="#scroll1" class="scroll_move">챌린지 소개</a></li>
+              <li>
+                <a href="#scroll2" class="scrol2_move">미션 달성 노하우</a>
+              </li>
+              <li><a href="#scroll3" class="scrol3_move">지원 프로그램</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- 단골 -->
+    </div>
+    <div class="main-content">
+      <div class="content-article cont_dangol">
+        <div class="area_title">
+          <div class="wrap_subinfo">
+            <span data-v-028b145e>10.04 - 12.31</span>
+          </div>
+          <div class="tit_detail tit_main">
+            <b>카카오 단골 만들기 챌린지</b>
+          </div>
+        </div>
+        <div class="area_visual">
+          <img
+            class="main_img"
+            src="https://www.kakaocorp.com/page/dangol/tit_dangol.png"
+            alt=""
+          />
+        </div>
+        <!-- 메인 -->
+        <div id="scroll1"></div>
+        <div class="wrap_dangol">
+          <!-- 챌린지 소개  -->
+          <div class="box_introduce">
+            <div class="tit_top">📣 카카오톡 채널 친구 1,000명을 모으세요!</div>
+            <div class="desc_top">
+              사업을 더욱성장시키고 싶으신 분이라면? <br />
+              챌린지 참여하고 사업 홍보의 기회도 얻으세요! <br />
+              채널 친구 1,000명 모으면 광고 지원금 100만 원 등<br />
+              다양한 혜택을 드립니다.
+            </div>
+            <div class="tit_bottom">카카오톡 채널이 궁금해요</div>
+            <div class="desc_bottom">
+              전 국민이 사용하는 카카오톡에서 내 사업을 홍보하는 비즈니스
+              공간이에요. <br />
+              챌린지 공식 채널에 방문해 채널을 경험해 보세요.
+              <div class="chel_link_btn">
+                <a href=""> 챌린지 공식 채널 바로가기 ▸</a>
+              </div>
+            </div>
+          </div>
+          <div class="wrap_btn">
+            <a href=""
+              ><div class="btn_dangol type_big">챌린지 참여하기</div></a
+            >
+          </div>
+          <div class="inner_dangol inner_step">
+            <div class="inner_tit type_emph">신청방법</div>
+            <div class="box_step1">
+              <div class="box_step1_tit">
+                <h4>step1. 카카오비즈니스 가입 및 채널 개설 확인</h4>
+              </div>
+              <div class="box_step1_inner">
+                친구를 모을 채널을 만드세요. <br />
+                단골 만들기 준비 완료!
+              </div>
+              <div class="wrap_btn step1_btn">
+                <a href=""
+                  ><div class="btn_dangol type_small">
+                    가입하기<img src="./img/diagonaArrow.PNG" alt="" /></div
+                ></a>
+                <a href=""
+                  ><div class="btn_dangol type_small">
+                    채널 개설하기
+                    <img src="./img/diagonaArrow.PNG" alt="" /></div
+                ></a>
+              </div>
+            </div>
+            <div class="arrow_down">
+              <img src="./img/arrow_down.png" alt="" />
+            </div>
+            <div class="box_step2">
+              <div class="box_step2_tit">
+                <h4>step2. 챌린지 참여 신청</h4>
+              </div>
+              <div class="box_step2_inner">
+                챌린지 공식 채널에서 [신청서]를 작성하세요. <br />
+                (10/4 오후 2시부터 모바일로 신청 가능)
+              </div>
+              <div class="wrap_btn step2_btn">
+                <a href=""
+                  ><div class="btn_dangol type_small">
+                    참여 신청하기<img
+                      src="./img/diagonaArrow.PNG"
+                      alt=""
+                    /></div
+                ></a>
+              </div>
+            </div>
+            <div class="arrow_down">
+              <img src="./img/arrow_down.png" alt="" />
+            </div>
+            <div class="box_step3">
+              <div class="box_step3_tit">
+                <h4>step3. 채널 친구 1,000명 모으고 미션 달성</h4>
+              </div>
+              <div class="box_step3_inner">
+                내 채널 친구 모으기에 도전하세요.<br />
+                1,000명의 채널 친구가 생기면 미션 성공!
+              </div>
+              <div class="wrap_btn step3_btn">
+                <a href=""
+                  ><div class="btn_dangol type_small">
+                    혜택 알아보기<img
+                      src="./img/diagonaArrow.PNG"
+                      alt=""
+                    /></div
+                ></a>
+              </div>
+            </div>
+            <div class="box_step_reference">
+              ※ 자세한 신청 방법은 챌린지 공식 채널을 확인해주세요.
+            </div>
+          </div>
+          <!-- 성공 시 -->
+          <div class="inner_dangol inner_benefit">
+            <div class="successBox_tit">
+              친구 1,000명 모으기에 성공하면 많은 혜택을 드려요!
+            </div>
+            <div class="scuccesBox_area">
+              <div class="scuccesBox1">
+                <div class="scuccesBox1_big_text">
+                  <strong>광고 지원금 100만 원</strong>
+                </div>
+                <div class="scuccesBox1_smoll_text">
+                  더 많은 고객에게 <br />
+                  내 사업을 알려요!
+                </div>
+                <div class="scuccesBox1_img">
+                  <img src="./img/ico_benefit1.png" alt="" />
+                </div>
+              </div>
+              <div class="scuccesBox2">
+                <div class="scuccesBox2_big_text">
+                  <strong>카카오 공식 인증패</strong>
+                </div>
+                <div class="scuccesBox2_smoll_text">
+                  채널 친구 1,000명 <br />
+                  미션 달성을 기념해요!
+                </div>
+                <div class="scuccesBox2_img">
+                  <img src="./img/ico_benefit2.png" alt="" />
+                </div>
+              </div>
+              <div class="scuccesBox3">
+                <div class="scuccesBox3_big_text">
+                  <strong>광고 지원금 100만 원</strong>
+                </div>
+                <div class="scuccesBox3_smoll_text">
+                  더 많은 고객에게 <br />
+                  내 사업을 알려요!
+                </div>
+                <div class="scuccesBox3_img">
+                  <img src="./img/ico_benefit3.png" alt="" />
+                </div>
+              </div>
+              <div class="scuccesBox4">
+                <div class="scuccesBox4_big_text">
+                  <strong>사업 홍보 기회 제공</strong>
+                </div>
+                <div class="scuccesBox4_smoll_text">
+                  더 많은 고객에게 <br />
+                  내 사업을 알려요!
+                </div>
+                <div class="scuccesBox4_img">
+                  <img src="./img/ico_benefit4.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- 실패 시 -->
+            <div class="inner_dangol inner_worry">
+              <div class="worryBox_tit">
+                미션에 실패하더라도 너무 아쉬워하지 마세요.
+              </div>
+              <div class="worryBox">
+                <div class="worryBox_area">
+                  <div class="worryBox1">
+                    <div class="worryBox1_big_text">
+                      <strong>응원 키트</strong>
+                    </div>
+                    <div class="worryBox1_smoll_text">
+                      10월중 챌린지에 참여한 분들께 <br />
+                      응원 키트를 드립니다<br />
+                      (500명 한정)
+                    </div>
+                    <div class="worryBox1_img">
+                      <img src="./img/ico_worry1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="worryBox2">
+                    <div class="worryBox2_big_text">
+                      <strong>카카오 프렌즈 굿즈</strong>
+                    </div>
+                    <div class="worryBox2_smoll_text">
+                      참여자 분들 중 100명을 추첨해 <br />
+                      카카오 프렌즈 굿즈를<br />
+                      드려요!
+                    </div>
+                    <div class="worryBox2_img">
+                      <img src="./img/ico_worry2.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wrap_btn">
+              <a href=""
+                ><div class="btn_dangol type_big" id="scroll2">
+                  챌린지 참여하기
+                </div></a
+              >
+            </div>
+          </div>
+          <div class="area_dangol area_knowhow area_anchor">
+            <!-- 미션 달성 노하우  -->
+            <div class="dangol_missiinTip_tit"><h4>미션 달성 노하우</h4></div>
+            <div class="dangol_missiinTip_subtit">채널 활용 꿀팁</div>
+            <div class="dangol_missiinTip_subsubtit">
+              미션 달성 어렵지 않아요, 꿀팁을 따라가 보세요
+            </div>
+            <div class="mision_list_link_area">
+              <ul class="list_link_area">
+                <li class="list_box1_area">
+                  <a href="" class="list_box1">
+                    <strong class="list_link_box_tit"
+                      >Tip1.카카오톡 채널 만들기</strong
+                    >
+                    <span class="list_link_box_sub"
+                      >카카오톡에 내 비즈니스 홈을 만들어 보세요!</span
+                    >
+                    <circle class="list_link_box_btn">
+                      <img src="./img/diagonaArrow2.PNG" alt="" />
+                    </circle>
+                  </a>
+                </li>
+                <li class="list_box2_area">
+                  <a href="" class="list_box2">
+                    <strong class="list_link_box_tit">Tip2. 친구 모으기</strong>
+                    <span class="list_link_box_sub"
+                      >나만 몰랐던 친구 늘리는 꿀팁을 알려드려요!</span
+                    >
+                    <circle class="list_link_box_btn">
+                      <img src="./img/diagonaArrow2.PNG" alt="" />
+                    </circle>
+                  </a>
+                </li>
+                <div class="clear" style="clear: both"></div>
+                <li class="list_box3_area">
+                  <a href="" class="list_box3">
+                    <strong class="list_link_box_tit"
+                      >Tip3.내 채널 홍보하기</strong
+                    >
+                    <span class="list_link_box_sub"
+                      >고객이 방문하는 곳곳에 내 채널을 알려요!</span
+                    >
+                    <circle class="list_link_box_btn">
+                      <img src="./img/diagonaArrow2.PNG" alt="" />
+                    </circle>
+                  </a>
+                </li>
+                <li class="list_box4_area">
+                  <a href="" class="list_box4">
+                    <strong class="list_link_box_tit">더 알아보기</strong>
+                    <span class="list_link_box_sub"
+                      >더 많은 채널 활용 꿀팁을 확인하세요!</span
+                    >
+                    <circle class="list_link_box_btn">
+                      <img src="./img/diagonaArrow2.PNG" alt="" />
+                    </circle>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- 활용 사례 -->
+            <div class="inner_dangol_ex">
+              <div class="inner_tit type_emph">활용 사례</div>
+              <div class="sub_dangol">
+                카카오톡 채널로 단골을 만드는 방법, 전국의 성공 사례를
+                만나보세요
+              </div>
+              <div class="slider">
+                <div>
+                  <div class="ys_img_box">
+                    <img src="./img/sell_story_1.png" alt="" />
+                    <div class="ys_box_text box1">
+                      <div class="ys_sub_slide">
+                        카카오 싱크로 쇼핑몰과 채널을 연동해 <br />
+                        고객의 원활한 쇼핑을 도울 수 있어요!
+                      </div>
+                      <div class="ys_sub_tit">대구 [뚜누]</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <img src="./img/sell_story_2.png" alt="" />
+                  <div class="ys_box_text box2">
+                    <div class="ys_sub_slide">
+                      채널로 고객에게 쿠폰을 발송하니 <br />
+                      단골이 생기고 매출이 늘었어요!
+                    </div>
+                    <div class="ys_sub_tit">구리 [가드니아 제빵소]</div>
+                  </div>
+                </div>
+                <div>
+                  <div><img src="./img/sell_story_3.png" alt="" /></div>
+                  <div class="ys_box_text box3">
+                    <div class="ys_sub_slide">
+                      축제 정보를 채널 홈에 알려 <br />
+                      사람들을 시장으로 방문하도록 했어요!
+                    </div>
+                    <div class="ys_sub_tit">경산 [하양꿈바우시장]</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrap_btn">
+            <a href=""
+              ><div class="btn_dangol type_big" id="scroll3">
+                챌린지 참여하기
+              </div></a
+            >
+          </div>
+          <!-- 지원 프로그램 -->
+          <div class="area_anchor">
+            <div class="dangol_program_tit"><h4>지원 프로그램</h4></div>
+            <div class="dangol_program_subtit">
+              다양한 지원 프로그램에 신청하고 카카오톡 채널을 성장시켜 보세요.
+            </div>
+            <div class="box_program">
+              <div class="box_program_area">
+                <div class="box_program_tit">소상공인 지원 혜택 프로그램</div>
+                <div class="box_program_sub">
+                  연매출 10억이하 소상공인이라면?
+                </div>
+                <div class="box_program_subsub">
+                  카카오톡 채널 개설하고 월렛 만들면 광고 지원금 30만 원을
+                  드려요.
+                </div>
+                <div class="box_program_link">
+                  <a href="">더 알아보기 ▸</a>
+                </div>
+              </div>
+              <div class="box_program_area">
+                <div class="box_program_tit">
+                  카카오비즈니스 온보딩 프로그램
+                </div>
+                <div class="box_program_sub">
+                  카카오비즈니스가 처음이거나, 광고캐시를 집행한 적이 없다면?
+                </div>
+                <div class="box_program_subsub">
+                  카카오톡 채널 만들고 30만 원, 모먼트 광고 계정 만들고 30만 원,
+                  총 60만 원의 광고 지원금을 드립니다.
+                </div>
+                <div class="box_program_subsubsub">
+                  * 대상 : 지원금 신청월 기준 최근 1년 카카오비즈니스 미집행
+                  사업자 또는 직전 1년 내 월 광고비 10만원 미만 사업자
+                </div>
+                <div class="box_program_link">
+                  <a href="">더 알아보기 ▸</a>
+                </div>
+              </div>
+              <div class="box_program_area">
+                <div class="box_program_tit">
+                  카카오비즈니스 점프업 프로그램
+                </div>
+                <div class="box_program_sub">
+                  온보딩 프로그램 수료 후 비즈니스의 성장을 이루고 싶다면?
+                </div>
+                <div class="box_program_subsub">
+                  광고캐시를 사용한 만큼 돌려드립니다. (최대 50만 원)
+                </div>
+                <div class="box_program_subsubsub">
+                  * 광고캐시는 카카오모먼트 광고계정에 광고주가 직접 결제해 충전
+                  후 사용하는 유상캐시를 말합니다.
+                </div>
+                <div class="box_program_link">
+                  <a href="">더 알아보기 ▸</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dangol_faq">
+            <h4>자주 묻는 질문 (FAQ)</h4>
+            <a href="" class="btn_qna">자세히 보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- footer -->
+  <footer>
+    <div class="footer-1">
+      <span
+        ><li class="yellow_icon">
+          소개
+          <ul>
+            <li>카카오문화</li>
+            <li>공동체</li>
+            <li>연혁</li>
+          </ul>
+        </li>
+      </span>
+      <span
+        ><li class="yellow_icon">
+          이야기
+          <ul>
+            <li>콘텐츠 저장소</li>
+            <li>뚝딱뚝딱 성장기</li>
+            <li>숫자로 보는 카카오</li>
+          </ul>
+        </li>
+      </span>
+      <span><li class="yellow_icon">뉴스</li> </span>
+      <span
+        ><li class="yellow_icon">
+          기술과 서비스
+          <ul>
+            <li>기술</li>
+            <li>서비스</li>
+          </ul>
+        </li>
+      </span>
+      <span
+        ><li class="yellow_icon">
+          약속과 책임
+          <ul>
+            <li>카카오의 다짐</li>
+            <li>ESG</li>
+            <li>액티브그린</li>
+            <li>단골 만들기 챌린지</li>
+            <li>디지털 권리</li>
+            <li>AI 윤리</li>
+          </ul>
+        </li>
+      </span>
+      <span
+        ><li class="yellow_icon">
+          투자정보
+          <ul>
+            <li>기업지배구조</li>
+            <li>주가정보</li>
+            <li>재무정보</li>
+            <li>IR행사</li>
+            <li>공시정보</li>
+            <li>공고</li>
+          </ul>
+        </li>
+      </span>
+      <span
+        ><li class="yellow_icon">
+          고객센터
+          <ul>
+            <li>카카오 고객센터 ↗</li>
+            <li>Daum 고객센터 ↗</li>
+            <li>커머스 고객센터 ↗</li>
+            <li>&nbsp;</li>
+            <span class="bold_li"><li>인재영입 ↗</li></span>
+            <li>&nbsp;</li>
+            <span class="bold_li"><li>카카오계정 ↗</li></span>
+          </ul>
+        </li>
+      </span>
+    </div>
+    <div class="footer-2">
+      <div class="footer-2-menu">
+        <span id="clickMenu" onclick="clickshow(this)"
+          >이용약관
+          <span>∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>카카오계정 서비스 ↗</li>
+              <li>카카오 서비스 ↗</li>
+              <li>Daum 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu" onclick="clickshow(this)"
+          >위치정보 이용약관 <span>∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>카카오 서비스 ↗</li>
+              <li>Daum 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu" onclick="clickshow(this)"
+          >개인정보처리방침 <span>∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>기업사이트</li>
+              <li>카카오 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu">운영정책</span>
+
+        <span id="clickMenu" onclick="clickshow(this)"
+          >청소년보호정책 <span>∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>카카오 서비스 ↗</li>
+              <li>Daum 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu">브랜드보호정책</span>
+
+        <span id="clickMenu">권리침해신고안내</span>
+
+        <span id="clickMenu" onclick="clickshow(this)"
+          >공지사항<span id="angle_bracket5">∨</span>
+          <div class="footerSubmenu">
+            <ul>
+              <li>투자정보 공지</li>
+              <li>카카오 서비스 ↗</li>
+              <li>Daum 서비스 ↗</li>
+            </ul>
+          </div>
+        </span>
+
+        <span id="clickMenu">사이버윤리실</span>
+
+        <span id="clickMenu">Contact Us</span>
+      </div>
+      <span class="copyright">© Kakao Corp. All rights reserved.</span>
+      <div class="relatedSites">
+        <span
+          id="relatedSites"
+          onclick="relatedShow(this,'relatedSites-sub','relatedSites-btn')"
+          >관련사이트<span id="relatedSites-btn">+</span>
+          <div class="relatedSites-sub" id="relatedSites-sub">
+            <ul>
+              <li>카카오 AI ↗</li>
+              <li>카카오 프라이버시 ↗</li>
+              <l0i>카카오 디벨로퍼스 ↗</l0i>
+              <li>다음 포털 사이트 ↗</li>
+              <li>동반 성장 사이트 ↗</li>
+              <li>제주 with kakao ↗</li>
+            </ul>
+          </div>
+        </span>
+      </div>
+    </div>
+  </footer>
+</html>
